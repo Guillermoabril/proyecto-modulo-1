@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-not">
   <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid justify-content-around">
       <a class="navbar-brand first-menu" href="#">Torneos</a>
@@ -30,7 +31,7 @@
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-            <img class="logo" src="/assets/img/logo.png" alt="" />
+            <img class="logo" src="assets/img-navbar/logo.png" alt="" />
             GG.red
           </h5>
           <button
@@ -86,8 +87,110 @@
       </div>
     </div>
   </nav>
-  <img class="image-bg w-100 h-50" src="/assets/img/photo-main2.png" alt="" />
+  <img class="image-bg w-100 h-50" src="/proyecto-modulo-1/assets/img-navbar/photo-main2.png" alt="" />
 
+  <h1 class="text-center f-not mt-5"> Noticias </h1>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators mb-0">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-barritas" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-barritas" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-barritas" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner py-5">
+          <div class="carousel-item active">
+           <div class="d-flex justify-content-evenly bg-card">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img-carrusel/project-q.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Filtración de nuevo proyecto de Sony</h5>
+                  <p class="card-text">Se filtra video de Project Q, el nuevo dispositivo portatil de Sony</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img-carrusel/ea-fc.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">EA fc 24</h5>
+                  <p class="card-text">EA fc, el nuevo titulo de fútbol de EA tras la ruptura con la FIFA, cuyo lanzamiento a publico se tiene previsto para finales del mes de septiembre.</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img-carrusel/fenix-inmortals.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cancelación de la secuela de Inmortals Fenix Rising</h5>
+                  <p class="card-text">Ubisoft confirma la cancelación de la secuela del titulo basado en la mitología griega y argumenta el por qué de esta cancelación.</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+              </div>
+          </div>
+           </div>
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-evenly">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img-carrusel/sea-of-stars.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sea of drops estará en PS plus Extra</h5>
+                      <p class="card-text">El RPG será agregado el 29 de agosto al catálogo de PS plus Extra, el mismo día se lanzará en PC, Xbox series X/S, Switch y Xbox one.</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="assets/img-carrusel/diablo-iv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jugadores del Diablo IV activan por accidente el pase premium</h5>
+                      <p class="card-text">Jugadores acusan a Blizzar por diseño mal intencionado, al activar el pase premium por accidente</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                  </div>
+                <div class="card " style="width: 18rem;">
+                    <img src="assets/img-carrusel/kraven.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Se confirma el rol de Kraven el cazador en Marvel's Spider-Man</h5>
+                      <p class="card-text">Jon Paquette, director narrativo de la secuela de Marvel's Spider-Man, aborda con el rol de Kraven el cazador como descencadenante de los acontecimientos del videojuego</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+           <div class="d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img-carrusel/Call-of-Duty.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">¿Son tan buenos como los recordamos?</h5>
+                  <p class="card-text">Activision reactivó y reparó los servidores de los antiguos Call of Duty.</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img-carrusel/futurama.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fortnite agregó contenido de Futurama al juego.</h5>
+                  <p class="card-text">La ultima actualización añade nuevos cosmeticos de los tres protagonistas, junto a un ala delta imitando la nave de planet express y añade el arma laser de blender.</p>
+                  <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img-carrusel/simon-sorcerer.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Simon the Sorcerer Origins se retrasa a 2024</h5>
+                  <p class="card-text">Los desarrolladores de Simon the Sorcerer anuncian que el juego se retrasará hasta 2024, sin embargo, resaltan que el juego poseerá textos en español y la colaboración del cantante Rick Astley.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+           </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <script src="assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

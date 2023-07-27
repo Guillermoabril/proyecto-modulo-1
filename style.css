@@ -25,3 +25,13 @@
 .image-bg {
   background: cover;
 }
+.f-not{
+    font-family: 'Press Start 2P', cursive;
+    color: #f07ef2;
+}
+.bg-not{
+    background-color: #090826;
+}
+.bg-barritas{
+    background-color: #f07ef2 !important;
+}
