@@ -9,7 +9,151 @@
     <link rel="stylesheet" href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="marketplace.css">
 </head>
-<body>
+<body style="background-color: #090826;">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid justify-content-around">
+          <a class="navbar-brand first-menu" href="/torneos/torneos.html">Torneos</a>
+          <a class="navbar-brand first-menu" href="chats/Chats.html">canales de chat</a>
+          <a class="navbar-brand first-menu" href="recomendaciones/recomendaciones.html">Recomendaciones</a>
+          <a class="navbar-brand first-menu" href="Noticias/noticias.html">Noticias</a>
+          <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html">Soundtracks</a>
+          <a class="navbar-brand first-menu" href="marketplace/marketplace.html">Tienda</a>
+          <a class="navbar-brand first-menu" href="comunidad/comunidad.html">Ayuda a la comunidad</a>
+    
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img class="logo" src="assets/img-navbar/logo.png" alt="" />
+                GG.red
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Iniciar sesión</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Idomas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2 form-search"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-search-menu" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <section class="bg-marketplace">
+      </section>
+
+      <main class="row d-flex my-5 mx-2">
+        <section class="">
+            <div class="text-products text-center py-4 h1">Marketplace</div>
+            <div class="row d-flex gap-4 justify-content-center container-fluid mt-5 carousel slide">
+                <div class="d-flex flex-column justify-content-center col-lg-3 col-md-2 pt-5 bg-borders">
+                    <img src="img-marketplace/giftcards.png" class="img-fluid">
+                    <a href="" class="text-center h2 text-products py-5">Gift cards</a>
+                </div>
+                <div class="d-flex flex-column justify-content-center col-lg-3 col-md-2 pt-5 bg-borders">
+                    <img src="img-marketplace/intercambio.png" class="img-fluid">
+                    <a href="" class="text-center h2 text-products py-5">Intercambio</a>
+                </div>
+                <div class="d-flex flex-column justify-content-center col-lg-3 col-md-2 pt-5 bg-borders">
+                    <img src="img-marketplace/img-digital-version.jpg" class="img-fluid">
+                    <a href="" class="text-center h2 text-products py-5">Digital versión</a>
+                </div>
+            </div>
+        </section>
+      </main>
+
+      <main class="row d-flex mb-5 mx-2">
+        <section class="">
+            <div class="text-products text-center py-4 h1">Productos destacados</div>
+            <div class="row d-flex justify-content-center container-fluid mt-5 ">
+                <div class="d-flex justify-content-evenly align-items-center col-lg-4 col-md-4 px-4 py-5 bg-borders2">
+                    <img src="img-marketplace/img-ps5.png" class="img-fluid">
+                    <a href="" class="text-center h2 text-products py-5">Play Station 5</a>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center col-lg-4 col-md-4 px-4 py-5 bg-borders2">
+                    <img src="img-marketplace/hogwarts-legacy-ps4.png" class="img-fluid">
+                    <a href="" class="text-center h2 text-products py-5">Hogwarts Legacy</a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center container-fluid ">
+                <div class="d-flex justify-content-evenly align-items-center col-lg-4 col-md-4 px-4 py-5 bg-borders2">
+                    <img src="img-marketplace/img-gift-xbox.png" class="img-fluid">
+                    <a href="" class="text-center h2 text-products py-5">Gift cards</a>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center col-lg-4 col-md-4 px-4 py-5 bg-borders2">
+                    <img src="img-marketplace/img-ps-plus.png" class="img-fluid">
+                    <a href="" class="text-center h2 text-products py-5">Play Station Plus</a>
+                </div>
+            </div>
+        </section>
+      </main>
+
+        <footer class="row d-flex flex-column justify-content-center py-5 container-fluid">
+        <section class="d-flex justify-content-center container-fluid gap-3 py-4">
+            <img class="img-fluid img-width" src="../assets/img/logo-facebook.png" alt="">
+            <img class="img-fluid img-width" src="../assets/img/logo-instagram.png" alt="">
+            <img class="img-fluid img-width" src="../assets/img/logo-twitter.png" alt="">
+            <img class="img-fluid img-width" src="../assets/img/logo-ws.png" alt="">
+
+        </section>
+        
+        <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
+        <p class=" fw-bold h4 text-center font-color-footer">Buscanos en redes sociales como GG.red</p>
+        <a p class="nav-link h3 fw-bold py-3 font-color-footer" href="">Comunicate con nosotros</a>
+        <p class="fw-bold h6 font-color-footer">© Copyrights 2023</p>
+        </section>
+    </footer>
+    
+    
     <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
