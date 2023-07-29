@@ -3,13 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recomendaciones</title>
     <!DOCTYPE html>
 <html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="recomendaciones.css">
 </head>
-<body>
+<body class="bg-body">
+    <nav class="navbar navbar-dark bg-nav fixed-top">
+        <div class="container-fluid justify-content-around">
+          <a class="navbar-brand first-menu" href="/torneos/torneos.html">Torneos</a>
+          <a class="navbar-brand first-menu" href="chats/Chats.html">canales de chat</a>
+          <a class="navbar-brand pag-act" href="recomendaciones/recomendaciones.html">Recomendaciones</a>
+          <a class="navbar-brand first-menu" href="Noticias/noticias.html">Noticias</a>
+          <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html">Soundtracks</a>
+          <a class="navbar-brand first-menu" href="marketplace/marketplace.html">Tienda</a>
+          <a class="navbar-brand first-menu" href="comunidad/comunidad.html">Ayuda a la comunidad</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img class="logo" src="assets-rec/img/logo.png" alt="" />
+                GG.red
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Iniciar sesión</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Idomas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2 form-search"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-search-menu" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="img-fondo"></div>
+      <h1 class=" f-2p text-center mt-3"> Recomendaciones</h1>
+      <div class="d-flex justify-content-center">
+        <div class="cont-cuadritos d-flex justify-content-center mt-5">
+            <div class="container w-c d-flex justify-content-center">
+                <div class="row align-items-center justify-content-end cont-cuad-horz">
+                    <div class="col-11">
+                        <div class="c-hor gap-1 d-flex justify-content-center align-items-center">
+                            <p class="f-rec mt-2 fs-5">Mejores juegos para pc</p>
+                            <span>
+                                <img src="assets-rec/img/Epic-Games.png" style="width: 45px; height: 45px;" alt="">
+                            </span>
+                            <span>
+                                <img src="assets-rec/img/steam-logo-removebg-preview.png" style="height: 65px; width: 65px;" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="c-hor gap-1 d-flex align-items-center justify-content-center">
+                            <p class="f-rec text-center mt-2 fs-5"> Mejores juegos para <br> consola</p>
+                            <span> <img src="assets-rec/img/ps-sw-xb.jpg" class="rounded" style="height: 55px;" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-g d-flex align-items-center">
+                <div class="cuad-gord row align-items-center justify-content-center">
+                    <img src="assets-rec/img/todas.jpg" style="height: 90px; width: 200px;" alt="">
+                    <p class="text-center f-rec fs-4">Mejores titulos con crossplay</p>
+                </div>
+            </div>
+          </div>
+      </div>
+      <footer class="row d-flex flex-column justify-content-center py-4 container-fluid">
+        <section class="d-flex justify-content-center container-fluid gap-3 py-4">
+            <img class="img-fluid img-width" src="assets-rec/img/logo-facebook.png" alt="">
+            <img class="img-fluid img-width" src="assets-rec/img/logo-instagram.png" alt="">
+            <img class="img-fluid img-width" src="assets-rec/img/logo-twitter.png" alt="">
+            <img class="img-fluid img-width" src="assets-rec/img/logo-ws.png" alt="">
+
+        </section>
+        <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
+        <p class=" fw-bold h4">Buscanos en redes sociales como GG.red</p>
+        <a p class="nav-link h3 text-black fw-bold py-3" href="">Comunicate con nosotros</a>
+        <p class="fw-bold h6">© Copyrights 2023</p>
+        </section>
+    </footer>
     <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

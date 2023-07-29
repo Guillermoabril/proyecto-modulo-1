@@ -1,0 +1,83 @@
+.bg-body{
+    background-color: #1D1459 !important;
+}
+.first-menu {
+    color:#BBF2ED;
+    transition: color 0.5s;
+  }
+  .first-menu:hover{
+    color: #e3f8f6;
+  }
+  .pag-act{
+    color: #932CBF;
+    transition: color 0.5s;
+  }
+  .pag-act:hover{
+    color: #ad47d8;
+  }
+  
+.logo {
+    width: 40px !important;
+    height: 30px !important;
+    padding-right: 10px;
+  }
+  .form-search {
+    border: 4px solid #BBF2ED;
+  }
+  
+  .btn-search-menu {
+    background-color: #BBF2ED;
+  }
+  .btn-search-menu:hover {
+    background-color: #29f2de;
+  }
+  
+  .second-menu-list {
+    color: #29f2de !important;
+  } 
+.bg-nav{
+    background-color: #140D43 !important;
+}
+.img-fondo{
+    background-image: url(assets-rec/img/f-4.png);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.f-2p{
+    font-family: 'Press Start 2P', cursive;
+    color: #29f2de;
+}
+.cont-cuadritos{
+    width: 60%;
+    height: 50vh;
+}
+.cont-cuad-horz{
+  height: 50vh;
+  width: 100%;
+}
+.c-hor{
+    background-color:#090826;
+    height: 17vh;
+    width: 90%;
+    border-radius: 40px;
+}
+.f-rec{
+    color: #29f2de;
+}
+.w-c{
+  width: 60%;
+}
+.c-g{
+  width: 40%;
+}
+.cuad-gord{
+  background-color: #090826;
+  border-radius: 40px;
+  width: 80%;
+  height: 40vh;
+}
+.img-width {
+  width: 2rem;
+}
