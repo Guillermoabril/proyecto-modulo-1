@@ -32,7 +32,7 @@ body {
 }
 
 .principal-container {
-  background-image: url(/proyecto-modulo-1/assets/img-carrusel/img-homepage.jpg);
+  background-image: url(/assets/img-chats/fondo.png);
   background-size: 100% 100%;
   padding: 50px;
   background-repeat: no-repeat;
@@ -188,4 +188,10 @@ body {
 .img-width {
   width: 2rem;
   height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .principal-container {
+    background-image: none;
+  }
 }
