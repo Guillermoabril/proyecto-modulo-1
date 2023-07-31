@@ -1,178 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="noticias.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
+    <html lang="en">
+      <link
+        rel="stylesheet"
+        href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="noticias.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+      />
+    </html>
+  </head>
 
-<body style="background-color: #090826;">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid justify-content-around">
-              <a class="navbar-brand first-menu" href="/torneos/torneos.html">Torneos</a>
-              <a class="navbar-brand first-menu" href="chats/Chats.html">canales de chat</a>
-              <a class="navbar-brand first-menu" href="recomendaciones/recomendaciones.html">Recomendaciones</a>
-              <a class="navbar-brand first-menu" href="Noticias/noticias.html">Noticias</a>
-              <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html">Soundtracks</a>
-              <a class="navbar-brand first-menu" href="marketplace/marketplace.html">Tienda</a>
-              <a class="navbar-brand first-menu" href="comunidad/comunidad.html">Ayuda a la comunidad</a>
-        
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              <div
-                class="offcanvas offcanvas-end text-bg-dark"
-                tabindex="-1"
-                id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel"
+  <body style="background-color: #090826">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid justify-content-around">
+        <a class="navbar-brand first-menu" href="/torneos/torneos.html"
+          >Torneos</a
+        >
+        <a class="navbar-brand first-menu" href="chats/Chats.html"
+          >canales de chat</a
+        >
+        <a
+          class="navbar-brand first-menu"
+          href="recomendaciones/recomendaciones.html"
+          >Recomendaciones</a
+        >
+        <a class="navbar-brand first-menu" href="Noticias/noticias.html"
+          >Noticias</a
+        >
+        <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html"
+          >Soundtracks</a
+        >
+        <a class="navbar-brand first-menu" href="marketplace/marketplace.html"
+          >Tienda</a
+        >
+        <a class="navbar-brand first-menu" href="comunidad/comunidad.html"
+          >Ayuda a la comunidad</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <img class="logo" src="assets/img-navbar/logo.png" alt="" />
+              GG.red
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list"
               >
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                    <img class="logo" src="assets/img-navbar/logo.png" alt="" />
-                    GG.red
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close btn-close-white"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="offcanvas-body">
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
-                        >Iniciar sesión</a
-                      >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Iniciar sesión</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Idomas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
+                    <li>
+                      <hr class="dropdown-divider" />
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Idomas
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </li>
-                      </ul>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
                     </li>
                   </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input
-                      class="form-control me-2 form-search"
-                      type="search"
-                      placeholder="Buscar"
-                      aria-label="Search"
-                    />
-                    <button class="btn btn-search-menu" type="submit">Buscar</button>
-                  </form>
-                </div>
-              </div>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2 form-search"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-search-menu" type="submit">
+                  Buscar
+                </button>
+              </form>
             </div>
-          </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="py-5">
-        <p class="text-products text-center my-5 fw-bold h2" style="font-family: 'Pacifico', cursive;
-        font-family: 'Press Start 2P', cursive;">Noticias</p>
+      <p
+        class="text-products text-center my-5 fw-bold h2"
+        style="
+          font-family: 'Pacifico', cursive;
+          font-family: 'Press Start 2P', cursive;
+        "
+      >
+        Noticias
+      </p>
     </div>
-        <section class="mx-4">
-            <section class="row d-flex justify-content-between container-fluid py-5">
+    <section class="mx-4">
+      <section class="row d-flex justify-content-between container-fluid py-5">
+        <article class="row d-flex justify-content-center gap-5 mx-2">
+          <div class="" style="padding-left: 7%">
+            <p
+              class="text-products text-start fw-bold h3"
+              style="
+                font-family: 'Pacifico', cursive;
+                font-family: 'Press Start 2P', cursive;
+              "
+            >
+              Noticias de la semana
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column col-lg-5 bg-borders align-items-center"
+          >
+            <p class="text-white pt-3 h3 rounded mx-3 text-center">
+              El sucesor del
+              <span class="fw-bold fs-4">Nintendo Switch</span> en inicios de
+              2024: un fabricante que trabajó con la empresa asegura que el
+              cambio será pronto, según reporte
+            </p>
+            <img
+              src="img-noticias/news-nintendo.jpeg"
+              alt=""
+              class="p-5 img-fluid"
+            />
+            <p
+              class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"
+            >
+              Son varios los rumores que han surgido en lo que va de año sobre
+              la sucesora de <span class="fw-bold fs-4">Nintendo Switch</span>,
+              y parece que estos continuarán. Un fabricante chino de SoC llamado
+              PixArt, reveló en un informe financiero que una desarrolladora
+              japonesa que no ha lanzado un sistema en años, prepara su
+              dispositivo a principios de 2024.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column col-lg-5 bg-borders align-items-center"
+          >
+            <p class="text-white pt-3 h3 rounded mx-3 text-center">
+              <span class="fw-bold fs-4">Xbox</span> está suspendiendo consolas
+              de usuarios que juegan emuladores en modo 'retail'
+            </p>
+            <img
+              src="img-noticias/news-emulador.webp"
+              alt=""
+              class="p-5 img-fluid"
+            />
+            <p
+              class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"
+            >
+              <span class="fw-bold fs-4">Microsoft</span> ha asestado otro golpe
+              a aquellos que utilizan su
+              <span class="fw-bold fs-4">Xbox Series</span> o
+              <span class="fw-bold fs-4">Xbox One</span> para jugar a emuladores
+              de videojuegos que no han sido autorizados en la Tienda Microsoft:
+              está suspendiendo temporalmente las consolas.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="row d-flex justify-content-between container-fluid py-5">
+        <article class="row d-flex justify-content-center gap-5 mx-2">
+          <div class="" style="padding-left: 7%">
+            <p
+              class="text-products text-start fw-bold h3"
+              style="
+                font-family: 'Pacifico', cursive;
+                font-family: 'Press Start 2P', cursive;
+              "
+            >
+              Primicias GG.red
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column col-lg-5 bg-borders align-items-center"
+          >
+            <p class="text-white pt-3 fs-2 rounded mx-3 text-center px-5">
+              <span class="fw-bold fs-4">Masahiro Sakurai</span> insiste en que
+              el próximo Super Smash Bros. tardará en llegar
+            </p>
+            <img
+              src="img-noticias/news-Mario.webp"
+              alt=""
+              class="p-5 img-fluid"
+            />
+            <p
+              class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"
+            >
+              <span class="fw-bold fs-4">Masahiro Sakurai</span>, padre de
+              <span class="fw-bold fs-4">Super Smash Bros.</span>, no tiene del
+              todo claro cómo debe continuar en el futuro. Pese a que el
+              diseñador japonés ha insistido en numerosas ocasiones durante el
+              último año que piensa en jubilarse.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column col-lg-5 bg-borders align-items-center"
+          >
+            <p class="text-white pt-3 fs-2 rounded mx-3 text-center">
+              <span class="fw-bold fs-4">‘Final Fantasy XIV’</span> llegará a
+              Xbox: Square Enix romperá la exclusiva con PlayStation para su
+              próxima gran expansión
+            </p>
+            <img
+              src="img-noticias/news-finalfantasy.jpeg"
+              alt=""
+              class="p-5 img-fluid"
+            />
+            <p
+              class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"
+            >
+              La compañía confirmó que
+              <span class="fw-bold fs-4">‘Final Fantasy XIV’</span> por fin
+              llega a Xbox, tomando en cuenta que desde su lanzamiento en 2013
+              para PlayStation 3, siempre fue exclusivo de las consolas de Sony,
+              además de contar con su versión de PC con juego cruzado.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="row d-flex justify-content-between container-fluid py-5">
+        <article class="row d-flex justify-content-center gap-5 mx-2">
+          <div class="" style="padding-left: 7%">
+            <p
+              class="text-products text-start fw-bold h3"
+              style="
+                font-family: 'Pacifico', cursive;
+                font-family: 'Press Start 2P', cursive;
+              "
+            >
+              Entrevistas mundo Gaming
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column col-lg-5 bg-borders align-items-center"
+          >
+            <p class="text-white pt-3 h3 rounded mx-3 text-center">
+              30 aniversario de Super Mario Bros. - Entrevista especial
+            </p>
+            <iframe
+              controls
+              width="420"
+              height="345"
+              src="https://www.youtube.com/embed/Sw-jPWmcGCM"
+            >
+            </iframe>
+            <p
+              class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"
+            >
+              Entrevista exclusiva con los creadores de
+              <span class="fw-bold fs-4">Super Mario Bros</span> , los genios
+              <span class="fw-bold fs-4">Miyamoto</span> y
+              <span class="fw-bold fs-4">Tezuka</span> hablan sobre los orígenes
+              de estos queridos fontaneros.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column col-lg-5 bg-borders align-items-center"
+          >
+            <p class="text-white pt-3 h3 rounded mx-3 text-center">
+              Capitulo Volkers programa Esports y videojuegos.
+            </p>
+            <iframe
+              width="420"
+              height="345"
+              src="https://www.youtube.com/embed/dc77RlR_qbk"
+            >
+            </iframe>
+            <p
+              class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"
+            >
+              <span class="fw-bold fs-4">GG.red</span> esta comprometido con
+              crear alianzas e impulsar a los creadores de contenido para
+              gamers, por eso semanalmente compartiremos un capitulo de Volkers.
+            </p>
+          </div>
+        </article>
+      </section>
+    </section>
 
-                <article class="row d-flex justify-content-center gap-5 mx-2">
-                    <div class="" style="padding-left: 7%;">
-                        <p class="text-products text-start fw-bold h3" style="font-family: 'Pacifico', cursive;
-                        font-family: 'Press Start 2P', cursive;">Noticias de la semana</p>
-                    </div>
-                    <div class="d-flex flex-column col-lg-5 bg-borders align-items-center">
-                        <p class="text-white pt-3 h3 rounded mx-3 text-center">El sucesor del <span class="fw-bold fs-4">Nintendo Switch</span> en inicios de 2024: un fabricante que trabajó con la empresa asegura que el cambio será pronto, según reporte</p>  
-                        <img src="img-noticias/news-nintendo.jpeg" alt="" class="p-5 img-fluid">
-                        <p class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center">Son varios los rumores que han surgido en lo que va de año sobre la sucesora de <span class="fw-bold fs-4">Nintendo Switch</span>, y parece que estos continuarán. Un fabricante chino de SoC llamado PixArt, reveló en un informe financiero que una desarrolladora japonesa que no ha lanzado un sistema en años, prepara su dispositivo a principios de 2024.</p>
-                    </div>
-                    <div class="d-flex flex-column col-lg-5 bg-borders align-items-center">
-                      <p class="text-white pt-3 h3 rounded mx-3 text-center"><span class="fw-bold fs-4">Xbox</span> está suspendiendo consolas de usuarios que juegan emuladores en modo 'retail'</p>  
-                        <img src="img-noticias/news-emulador.webp" alt="" class="p-5 img-fluid">
-                        <p class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"><span class="fw-bold fs-4">Microsoft</span> ha asestado otro golpe a aquellos que utilizan su <span class="fw-bold fs-4">Xbox Series</span> o <span class="fw-bold fs-4">Xbox One</span> para jugar a emuladores de videojuegos que no han sido autorizados en la Tienda Microsoft: está suspendiendo temporalmente las consolas.</p>
-                  </div>
-                </article> 
-            </section>
-            <section class="row d-flex justify-content-between container-fluid py-5">
+    <footer
+      class="row d-flex flex-column justify-content-center py-5 container-fluid"
+    >
+      <section class="d-flex justify-content-center container-fluid gap-3 py-4">
+        <img
+          class="img-fluid img-width"
+          src="../assets/img/logo-facebook.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img/logo-instagram.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img/logo-twitter.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img/logo-ws.png"
+          alt=""
+        />
+      </section>
 
-              <article class="row d-flex justify-content-center gap-5 mx-2">
-                  <div class="" style="padding-left: 7%;">
-                      <p class="text-products text-start fw-bold h3" style="font-family: 'Pacifico', cursive;
-                      font-family: 'Press Start 2P', cursive;">Primicias GG.red</p>
-                  </div>
-                  <div class="d-flex flex-column col-lg-5 bg-borders align-items-center">
-                    <p class="text-white pt-3 fs-2 rounded mx-3 text-center px-5"><span class="fw-bold fs-4">Masahiro Sakurai</span> insiste en que el próximo Super Smash Bros. tardará en llegar</p>  
-                    <img src="img-noticias/news-Mario.webp" alt="" class="p-5 img-fluid">
-                    <p class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"><span class="fw-bold fs-4">Masahiro Sakurai</span>, padre de <span class="fw-bold fs-4">Super Smash Bros.</span>, no tiene del todo claro cómo debe continuar en el futuro. Pese a que el diseñador japonés ha insistido en numerosas ocasiones durante el último año que piensa en jubilarse.</p>
-                </div>
-                <div class="d-flex flex-column col-lg-5 bg-borders align-items-center">
-                  <p class="text-white pt-3 fs-2 rounded mx-3 text-center"><span class="fw-bold fs-4">‘Final Fantasy XIV’</span> llegará a Xbox: Square Enix romperá la exclusiva con PlayStation para su próxima gran expansión</p>  
-                    <img src="img-noticias/news-finalfantasy.jpeg" alt="" class="p-5 img-fluid">
-                    <p class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center">La compañía confirmó que <span class="fw-bold fs-4">‘Final Fantasy XIV’</span> por fin llega a Xbox, tomando en cuenta que desde su lanzamiento en 2013 para PlayStation 3, siempre fue exclusivo de las consolas de Sony, además de contar con su versión de PC con juego cruzado.</p>
-              </div>
-              </article> 
-          </section>
-          <section class="row d-flex justify-content-between container-fluid py-5">
-
-            <article class="row d-flex justify-content-center gap-5 mx-2">
-                <div class="" style="padding-left: 7%;">
-                    <p class="text-products text-start fw-bold h3" style="font-family: 'Pacifico', cursive;
-                    font-family: 'Press Start 2P', cursive;">Entrevistas mundo Gaming</p>
-                </div>
-                <div class="d-flex flex-column col-lg-5 bg-borders align-items-center">
-                  <p class="text-white pt-3 h3 rounded mx-3 text-center">30 aniversario de Super Mario Bros. - Entrevista especial</p>  
-                  <iframe controls width="420" height="345" src="https://www.youtube.com/embed/Sw-jPWmcGCM">
-                  </iframe>
-                  <p class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center">Entrevista exclusiva con los creadores de <span class="fw-bold fs-4">Super Mario Bros</span> , los genios <span class="fw-bold fs-4">Miyamoto</span> y <span class="fw-bold fs-4">Tezuka</span> hablan sobre los orígenes de estos queridos fontaneros.</p>
-              </div>
-              <div class="d-flex flex-column col-lg-5 bg-borders align-items-center">
-                <p class="text-white pt-3 h3 rounded mx-3 text-center">Capitulo Volkers programa Esports y videojuegos.</p>  
-                <iframe width="420" height="345" src="https://www.youtube.com/embed/dc77RlR_qbk">
-                </iframe>
-                  <p class="text-black bg-text-news my-3 h5 rounded mx-3 fw-semibold text-center"><span class="fw-bold fs-4">GG.red</span> esta comprometido con crear alianzas e impulsar a los creadores de contenido para gamers, por eso semanalmente compartiremos un capitulo de Volkers.</p>
-            </div>
-            </article> 
-        </section>
-        </section>
-
-        <footer class="row d-flex flex-column justify-content-center py-5 container-fluid">
-            <section class="d-flex justify-content-center container-fluid gap-3 py-4">
-                <img class="img-fluid img-width" src="../assets/img/logo-facebook.png" alt="">
-                <img class="img-fluid img-width" src="../assets/img/logo-instagram.png" alt="">
-                <img class="img-fluid img-width" src="../assets/img/logo-twitter.png" alt="">
-                <img class="img-fluid img-width" src="../assets/img/logo-ws.png" alt="">
-    
-            </section>
-            
-            <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
-            <p class=" fw-bold h4 text-center font-color-footer">Buscanos en redes sociales como GG.red</p>
-            <a p class="nav-link h3 fw-bold py-3 font-color-footer" href="">Comunicate con nosotros</a>
-            <p class="fw-bold h6 font-color-footer">© Copyrights 2023</p>
-            </section>
-        </footer>
+      <section
+        class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
+      >
+        <p class="fw-bold h4 text-center font-color-footer">
+          Buscanos en redes sociales como GG.red
+        </p>
+        <a p class="nav-link h3 fw-bold py-3 font-color-footer" href=""
+          >Comunicate con nosotros</a
+        >
+        <p class="fw-bold h6 font-color-footer">© Copyrights 2023</p>
+      </section>
+    </footer>
 
     <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
