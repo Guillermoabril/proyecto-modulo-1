@@ -1,0 +1,51 @@
+.first-menu {
+    color: #f07ef2;
+  }
+  
+  .logo {
+    width: 40px !important;
+    height: 30px !important;
+    padding-right: 10px;
+  }
+  .form-search {
+    border: 4px solid #f07ef2;
+  }
+  
+  .btn-search-menu {
+    background-color: #f07ef2;
+  }
+  .btn-search-menu:hover {
+    background-color: #29f2de;
+  }
+  
+  .second-menu-list {
+    color: #29f2de !important;
+  }
+
+  .bg-marketplace {
+    background: url(img-marketplace/bg-marketplace.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    opacity: 0,8;
+  }
+
+  .img-width {
+    width: 4rem;
+  }
+
+  .font-color-footer {
+    color: #BBF2ED;
+  }
+  .text-products{
+    color: #29F2DE;
+  }
+
+  .bg-borders {
+    background-color: #071540;
+    border-radius: 10%;
+  }
+
+  .bg-borders2 {
+    background-color: #071540;
+  }
