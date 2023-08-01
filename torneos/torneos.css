@@ -2,6 +2,17 @@
     color: #f07ef2;
     transition: color 0.4s;
   }
+  .bg-nav{
+    background-color: #090826;
+  }
+  .img-fond{
+    background-image: url(img/zyro-image.png);
+    width: 100%;
+    height: 55vh;
+    background-position: -0rem -18rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   
   .first-menu:hover {
     color: #edd2edf4;
@@ -27,13 +38,13 @@
       color: #29f2de !important;
       transition: color 0.4s;
     }
-  
     .second-menu-list:hover {
       color: #9dece4 !important;
     }
   
     .second-menu li {
       list-style: none;
+      margin-bottom: 10%;
     }
   
     .img-width {
