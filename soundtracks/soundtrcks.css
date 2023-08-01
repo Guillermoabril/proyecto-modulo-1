@@ -1,100 +1,189 @@
-.c-s{
-    color: #2FC9EA !important;
-    transition: color 0.4s;
+.c-s {
+  color: #2fc9ea !important;
+  transition: color 0.4s;
 }
-.c-s:hover{
-    color: #7de0f6 !important;
+.c-s:hover {
+  color: #7de0f6 !important;
 }
-.bg-body{
-    background-color: #932CBF !important;
+.bg-body {
+  background-color: #932cbf !important;
 }
 .first-menu {
-    color: #932CBF;
-    transition: color 0.4s;
-  }
-  .first-menu:hover{
-    color: #a953ce;
-  }
-  .bg-nav{
-    background-color: #090826 !important;
-  }
-  .logo {
-    width: 40px !important;
-    height: 30px !important;
-    padding-right: 10px;
-  }
-  .form-search {
-    border: 4px solid #f07ef2;
-  }
-  
-  .btn-search-menu {
-    background-color: #f07ef2;
-  }
-  .btn-search-menu:hover {
-    background-color: #29f2de;
-  }
-  
-  .second-menu-list {
-    color: #29f2de !important;
-  }
-  
-  .image-bg {
-    background: cover;
-  }
-  .bg-img{
-    background-image: url(assets/img/zyro-image.png);
-    width: 100%;
-    height: 70vh;
-    background-repeat: no-repeat;
-    /* background-position-y: -50rem; */
-    background-size: cover;
-  }
-  .f-2p{
-    font-family: 'Press Start 2P', cursive;
-    color: #2FC9EA !important;
-  }
-.bg-aud{
-    border: solid 3px #29f2de;
-    height: 100px;
-    border-radius: 20px;
-    width: 100%;
+  color: #932cbf;
+  transition: color 0.4s;
 }
-.cont-auds{
-    width: 100%;
+.first-menu:hover {
+  color: #a953ce;
 }
-.cont-meg{
-    margin-top: 10px;
-    width: 27%;
+.bg-nav {
+  background-color: #090826 !important;
 }
-.cont-cup{
-    margin-top: 10px;
-    width: 60%;
+.logo {
+  width: 40px !important;
+  height: 30px !important;
+  padding-right: 10px;
 }
-.cont-halo{
-    margin-top: 10px;
-    width: 80%;
+.form-search {
+  border: 4px solid #f07ef2;
 }
-.bg-halo{
-    border: solid 3px #29f2de;
-    height: 200px;
-    border-radius: 20px;
-    width: 100%;  
+.btn-search-menu {
+  background-color: #f07ef2;
 }
-.cont-mega-man{
-    margin-top: 10px;
-    width: 50%;
+.btn-search-menu:hover {
+  background-color: #29f2de;
 }
-.cont-zelda{
-    margin-top: 10px;
-    width: 47%;
+
+.second-menu-list {
+  color: #29f2de !important;
+}
+
+.image-bg {
+  background: cover;
+}
+.bg-img {
+  background-image: url(assets/img/zyro-image.png);
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  /* background-position-y: -50rem; */
+  background-size: cover;
+}
+.f-2p {
+  font-family: "Press Start 2P", cursive;
+  color: #2fc9ea !important;
+}
+.bg-aud {
+  border: solid 3px #29f2de;
+  height: 100px;
+  border-radius: 20px;
+  width: 100%;
+}
+.cont-auds {
+  width: 100%;
+}
+.cont-meg {
+  margin-top: 10px;
+  width: 27%;
+}
+.cont-cup {
+  margin-top: 10px;
+  width: 60%;
+}
+.cont-halo {
+  margin-top: 10px;
+  width: 80%;
+}
+.bg-halo {
+  border: solid 3px #29f2de;
+  height: 200px;
+  border-radius: 20px;
+  width: 100%;
+}
+.cont-mega-man {
+  margin-top: 10px;
+  width: 50%;
+}
+.cont-zelda {
+  margin-top: 10px;
+  width: 47%;
 }
 .bg-main-1 {
-    background-color: #1462A6;
+  background-color: #1462a6;
 }
-
-
 .img-width {
-    width: 2rem;
-    height: 2rem;
-
+  width: 2rem;
+  height: 2rem;
+}
+.m-i {
+  margin-top: 3.4%;
+}
+.second-menu li {
+  list-style: none;
+  margin-bottom: 10%;
+}
+.first-menu:hover {
+  color: #9a5ab6 !important;
+}
+@media (max-width: 780px){
+  .m-meg{
+    margin-top: 11%;
+  } 
+  .bg-img{
+    background-position: -7rem 3rem;
+    background-size: cover;
+  }
+  .f-nav{
+    font-size: 16px !important;
+    margin-left: -30px !important;
+  }
+  .m-i{ 
+    margin-top: 4.5%;
+  }
+  .t-barra{
+    width: 100%;
+  }
+  .logo{
+    margin-right: -25px;
+  }
+  .space-width{
+    width: 40%;
+  }
+}
+@media (max-width: 530px){
+  .bg-img{
+    background-position:-30rem 3rem;
+    background-size: cover;
+  }
+  .t-barra{
+    display: none !important;
+  }
+  .f-nav{
+    font-size: 13px !important;
+  }
+  .m-i{
+    margin-top: 5% !important;
+  }
+  .space-width{
+    width: 10%;
+    display: flex;
+    justify-content: end;
+  }
+  .cont-auds{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cont-meg{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .cont-cup{
+    width: 80%;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .aud-cup{
+    height: 20vh;
+  }
+  .cont-halo{
+    width: 100%;
+    margin-left: 2%;
+  }
+  .bg-halo{
+    height: 30vh;
+  }
+  .out{
+    display: none;
+  }
+  .cont-mega-man{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .m-meg{
+    margin-top: -10px;
+  }
+  .cont-zelda{
+    width: 80%;
+    margin-left: 10%;
+  }
 }
