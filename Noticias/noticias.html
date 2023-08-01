@@ -1,133 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!DOCTYPE html>
-    <html lang="en">
-      <link
-        rel="stylesheet"
-        href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
-      />
-      <link rel="stylesheet" href="noticias.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap"
-        rel="stylesheet"
-      />
-    </html>
-  </head>
-
-  <body style="background-color: #090826">
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container-fluid justify-content-around">
-        <a class="navbar-brand first-menu" href="/torneos/torneos.html"
-          >Torneos</a
-        >
-        <a class="navbar-brand first-menu" href="/chats/Chats.html"
-          >canales de chat</a
-        >
-        <a
-          class="navbar-brand first-menu"
-          href="/recomendaciones/recomendaciones.html"
-          >Recomendaciones</a
-        >
-        <a class="navbar-brand first-menu" href="/Noticias/noticias.html"
-          >Noticias</a
-        >
-        <a class="navbar-brand first-menu" href="/soundtracks/soundtracks.html"
-          >Soundtracks</a
-        >
-        <a class="navbar-brand first-menu" href="/marketplace/marketplace.html"
-          >Tienda</a
-        >
-        <a class="navbar-brand first-menu" href="/comunidad/comunidad.html"
-          >Ayuda a la comunidad</a
-        >
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              <img class="logo" src="assets/img-navbar/logo.png" alt="" />
-              GG.red
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list"
+<html lang="en">
+    <link rel="stylesheet" href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Noticias/noticias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #090826;">
+    <nav class="navbar navbar-dark bg-dark fixed-top d-flex">
+            <div class="container-fluid justify-content-between">
+            <div class="d-flex justify-content-between">
+              <span class="navbar-brand"><img src="/assets/img-navbar/logo.png" alt="" class="logo"></span>
+              <a class="btn first-menu mt-1" href="">Iniciar Sesión</a>
+              <a class="btn first-menu mt-1" href="">Blog</a>
+              <a
+                class="nav-link dropdown-toggle first-menu m-i"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
+                Idiomas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
+                
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">
-                  Buscar
-                </button>
-              </form>
+            </div>  
+                           
+            </li>
+
+          </ul>
+          <div class="d-flex gap-3 space-width">
+            <form class="d-flex t-barra" role="search">
+              <input
+                class="form-control me-2 form-search b-busqueda"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-search-menu b-busqueda" type="submit">Buscar</button>
+            </form>        
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
+                GG.red
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+            <div class="offcanvas-body second-menu">
+              <ul>
+              
+              <li><a class="navbar-brand second-menu-list" href="/torneos/torneos.html">Torneos</a></li> 
+              <li><a class="navbar-brand second-menu-list" href="/chats/Chats.html">canales de chat</a></li> 
+              <li><a class="navbar-brand second-menu-list" href="/recomendaciones/recomendaciones.html">Recomendaciones</a></li>
+              <li><a class="navbar-brand second-menu-list" href="/Noticias/noticias.html">Noticias</a></li>
+              <li><a class="navbar-brand second-menu-list" href="/soundtracks/soundtracks.html">Soundtracks</a></li>
+              <li><a class="navbar-brand second-menu-list" href="/marketplace/marketplace.html">Tienda</a></li>
+              <li><a class="navbar-brand second-menu-list" href="/comunidad/comunidad.html">Ayuda a la comunidad</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </nav>
+      </nav>
     <div class="py-5">
       <p
         class="text-products text-center my-5 fw-bold h2"
