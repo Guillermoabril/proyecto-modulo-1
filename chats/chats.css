@@ -194,4 +194,42 @@ body {
   .principal-container {
     background-image: none;
   }
+  .f-not {
+    padding-top: 26px;
+  }
+  .team-image {
+    width: 8%;
+    height: 80px;
+    min-width: 70px;
+    border-radius: 12px;
+  }
+  .team-people {
+    max-width: 100px;
+    margin-top: 5px;
+    font-size: 10px;
+    padding: 2px;
+  }
+  .team-name {
+    font-size: 13px;
+  }
+  .last-message {
+    font-size: 10px;
+  }
+  .chats-container {
+    display: flex;
+    margin: 30px 45px 0 1px;
+  }
+  .container-videogames {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 45px 0 1px;
+    gap: 10px;
+  }
+  .container-card {
+    width: 40%;
+  }
+  .card-button {
+    margin-left: 30px;
+  }
 }
