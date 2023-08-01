@@ -1,5 +1,10 @@
 .first-menu {
     color: #f07ef2;
+    transition: color 0.4s;
+  }
+
+  .first-menu:hover {
+    color: #edd2edf4;
   }
   
   .logo {
@@ -48,4 +53,29 @@
 
   .bg-borders2 {
     background-color: #071540;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .navbar a {
+      font-size: 15px !important;
+      font-weight: bold;
+      display: flex;
+      text-align: start;
+    } 
+    .navbar {
+      display: flex;
+      justify-items: left;
+      justify-content: space-between;
+    }
+    .margin-dropdown{
+      margin-bottom: 5px !important;
+    }
+  }
+
+  .second-menu-list li{
+    display: inline-block !important;
+  }
+
+  .m-i {
+    margin-top: 3.5%;
   }
