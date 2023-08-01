@@ -14,35 +14,50 @@
         rel="stylesheet"
         href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
       />
-      <link rel="stylesheet" href="recomendaciones.css">
+      <link rel="stylesheet" href="recomendaciones.css" />
     </html>
   </head>
   <body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-      <div class="container-fluid justify-content-around">
-        <a class="med-nav navbar-brand first-menu" href="/torneos/torneos.html"
-          >Torneos</a
-        >
-        <a class="med-nav navbar-brand first-menu" href="/chats/Chats.html"
-          >canales de chat</a
-        >
-        <a
-          class="med-nav navbar-brand pag-act"
-          href="/recomendaciones/recomendaciones.html"
-          >Recomendaciones</a
-        >
-        <a class="med-nav navbar-brand first-menu" href="/Noticias/noticias.html"
-          >Noticias</a
-        >
-        <a class="med-nav navbar-brand first-menu" href="/soundtracks/soundtracks.html"
-          >Soundtracks</a
-        >
-        <a class="med-nav navbar-brand first-menu" href="/marketplace/marketplace.html"
-          >Tienda</a
-        >
-        <a class="med-nav navbar-brand first-menu" href="/comunidad/comunidad.html"
-          >Ayuda a la comunidad</a
-        >
+    <nav class="navbar bg-nav fixed-top d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
+          <span class="navbar-brand"
+            ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+          /></span>
+          <a class="btn first-menu mt-1" href="">Iniciar Sesión</a>
+          <a class="btn first-menu mt-1" href="">Blog</a>
+          <a
+            class="nav-link dropdown-toggle first-menu m-i"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Idiomas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>       
+      <div class="d-flex gap-3 space-width">
+        <form class="d-flex t-barra" role="search">
+          <input
+            class="form-control me-2 form-search b-busqueda"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Search"
+          />
+          <button class="btn btn-search-menu b-busqueda" type="submit">
+            Buscar
+          </button>
+        </form>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,7 +76,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              <img class="logo" src="assets-rec/img/logo.png" alt="" />
+              <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
               GG.red
             </h5>
             <button
@@ -72,57 +87,63 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list"
-              >
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
+            <div class="offcanvas-body second-menu">
+              <ul>
+                <li>
                   <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    class="navbar-brand second-menu-list"
+                    href="/torneos/torneos.html"
+                    >Torneos</a
                   >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/chats/Chats.html"
+                    >canales de chat</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/recomendaciones/recomendaciones.html"
+                    >Recomendaciones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/Noticias/noticias.html"
+                    >Noticias</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/soundtracks/soundtracks.html"
+                    >Soundtracks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/marketplace/marketplace.html"
+                    >Tienda</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/comunidad/comunidad.html"
+                    >Ayuda a la comunidad</a
+                  >
                 </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">
-                  Buscar
-                </button>
-              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </nav>
     <div class="img-fondo"></div>
     <h1 class="f-2p text-center mt-3">Recomendaciones</h1>
@@ -197,7 +218,7 @@
       >
         <img
           src="assets-rec/img/planet-lana.jpg"
-          class="rounded"
+          class="rounded w-li-2"
           style="height: 250px; width: 200px"
           alt=""
         />
@@ -210,7 +231,7 @@
       >
         <img
           src="assets-rec/img/Doom_cover_art.jpg"
-          class="rounded"
+          class="rounded w-li-2"
           style="height: 250px; width: 200px"
           alt=""
         />
@@ -224,7 +245,7 @@
         <img
           src="assets-rec/img/zelda.jpg"
           style="height: 250px"
-          class="rounded"
+          class="rounded w-li-2"
           alt=""
         />
         <a class="btn btn-dark mt-3" href="listas/Listas-2/lanz.html">
@@ -237,7 +258,7 @@
         <img
           src="assets-rec/img/genshin.jpg"
           style="height: 250px"
-          class="rounded"
+          class="rounded w-li-2"
           alt=""
         />
         <a class="btn btn-dark mt-3" href="listas/Listas-2/free.html"
