@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soundtracks</title>
     <!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="soundtrcks.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
-<body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand first-menu" href="/torneos/torneos.html">Torneos</a>
-          <a class="navbar-brand first-menu" href="/chats/Chats.html">canales de chat</a>
-          <a class="navbar-brand first-menu" href="/recomendaciones/recomendaciones.html">Recomendaciones</a>
-          <a class="navbar-brand first-menu" href="/Noticias/noticias.html">Noticias</a>
-          <a class="navbar-brand first-menu c-s" href="/soundtracks/soundtracks.html">Soundtracks</a>
-          <a class="navbar-brand first-menu" href="/marketplace/marketplace.html">Tienda</a>
-          <a class="navbar-brand first-menu" href="/comunidad/comunidad.html">Ayuda a la comunidad</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <html lang="en">
+      <link
+        rel="stylesheet"
+        href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="soundtrcks.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+      />
+    </html>
+  </head>
+  <body class="bg-body">
+    <nav class="navbar bg-nav fixed-top d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex gap-4 justify-content-between">
+          <span class="navbar-brand"
+            ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+          /></span>
+          <a class="btn first-menu mt-1 f-nav fs-4" href="">Iniciar Sesión</a>
+          <a class="btn first-menu mt-1 f-nav fs-4" href="">Blog</a>
+          <a
+            class="nav-link dropdown-toggle first-menu f-nav fs-4 m-i"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Idiomas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex gap-3 space-width">
+          <form class="d-flex t-barra" role="search">
+            <input
+              class="form-control me-2 form-search b-busqueda"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-search-menu b-busqueda" type="submit">
+              Buscar
             </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div
             class="offcanvas offcanvas-end text-bg-dark"
             tabindex="-1"
@@ -31,7 +76,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img class="logo" src="img/logo.png" alt="" />
+                <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
                 GG.red
               </h5>
               <button
@@ -42,107 +87,163 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">Buscar</button>
-              </form>
+              <div class="offcanvas-body second-menu">
+                <ul>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/torneos/torneos.html"
+                      >Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/chats/Chats.html"
+                      >canales de chat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/recomendaciones/recomendaciones.html"
+                      >Recomendaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/Noticias/noticias.html"
+                      >Noticias</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/soundtracks/soundtracks.html"
+                      >Soundtracks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/marketplace/marketplace.html"
+                      >Tienda</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/comunidad/comunidad.html"
+                      >Ayuda a la comunidad</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="bg-img"></div>
-      <h1 class="text-center f-2p mt-3">Soundtracks</h1>
-      <div class="cont-auds d-flex justify-content-evenly flex-wrap mt-5">
-        <div class=" d-flex row cont-meg">
-          <p class="text-center f-2p">Megalovania/Undertale</p>
-          <div  class="bg-aud d-flex align-items-center justify-content-center">
-            <audio src="assets/sound/Undertale OST 100 - Megalovania.mp3" controls></audio>
-          </div>
-        </div>
-          <div class="d-flex row cont-cup ms-5">
-            <p class="f-2p text-center"> Cuphead</p>
-            <div class="bg-aud d-flex align-items-center justify-content-evenly gap-3">
-              <audio src="assets/sound/13 Floral Fury.mp3" controls></audio>
-              <audio src="assets/sound/34-Honeycomb-Herald.mp3" controls></audio>
-              <audio src="assets/sound/One-Hell-Of-A-Time.mp3" controls></audio>
-            </div>
-          </div>
-          <div class="d-flex row cont-halo">
-            <p class="f-2p text-center">Halo/Halo 2</p>
-            <div class="bg-halo d-flex align-items-center justify-content-evenly gap-3 flex-wrap">
-              <audio src="assets/sound/Halo Theme Song Original.mp3" controls></audio>
-              <audio src="assets/sound/The Last Spartan.mp3" controls></audio>
-              <audio src="assets/sound/Follow (1st Movement of the Odyssey).mp3" controls></audio>
-              <audio src="assets/sound/Covenant Dance.mp3" controls></audio>
-              <audio src="assets/sound/On a Pale Horse.mp3" controls></audio>
-              <audio src="assets/sound/Rock Anthem for Saving the World.mp3" controls></audio>
-            </div>
-          </div>
-          <div class="cont-mega-man">
-            <p class="f-2p text-center"> mega man 2</p>
-            <div class="bg-aud d-flex justify-content-evenly gap-3 align-items-center">
-              <audio src="assets/sound/Dr. Wily Stage 1.mp3" controls></audio>
-              <audio src="assets/sound/Wood Man Stage.mp3" controls></audio>
-            </div>
-          </div>
-          <div class="cont-zelda">
-            <p class="f-2p"> The legend of Zelda: Majora's mask</p>
-            <div class="bg-aud d-flex align-items-center justify-content-evenly gap-3">
-              <audio src="assets/sound/Deku Palace.mp3" controls></audio>
-              <audio src="assets/sound/Magic Hags' Potion Shop.mp3" controls></audio>
-            </div>
-          </div>
       </div>
-      <footer class="row d-flex flex-column justify-content-center py-4 container-fluid">
-        <section class="d-flex justify-content-center container-fluid gap-3 py-4">
-            <img class="img-fluid img-width" src="assets/img/logo-facebook.png" alt="">
-            <img class="img-fluid img-width" src="assets/img/logo-instagram.png" alt="">
-            <img class="img-fluid img-width" src="assets/img/logo-twitter.png" alt="">
-            <img class="img-fluid img-width" src="assets/img/logo-ws.png" alt="">
-
-        </section>
-        <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
-        <p class=" fw-bold h4">Buscanos en redes sociales como GG.red</p>
-        <a p class="nav-link h3 text-black fw-bold py-3" href="">Comunicate con nosotros</a>
+    </nav>
+    <div class="bg-img"></div>
+    <h1 class="text-center f-2p mt-3">Soundtracks</h1>
+    <div class="cont-auds d-flex justify-content-evenly flex-wrap mt-5">
+      <div class="d-flex row cont-meg">
+        <p class="text-center f-2p">Undertale</p>
+        <div class="bg-aud d-flex align-items-center justify-content-center">
+          <audio
+            src="assets/sound/Undertale OST 100 - Megalovania.mp3"
+            controls
+          ></audio>
+        </div>
+      </div>
+      <div class="d-flex row container cont-cup ms-5">
+        <p class="f-2p text-center">Cuphead</p>
+        <div
+          class="bg-aud row d-flex align-items-center aud-cup justify-content-evenly gap-3"
+        >
+          <audio class="col" src="assets/sound/13 Floral Fury.mp3" controls></audio>
+          <audio class="col" src="assets/sound/34-Honeycomb-Herald.mp3" controls></audio>
+          <audio class="col out" src="assets/sound/One-Hell-Of-A-Time.mp3" controls></audio>
+        </div>
+      </div>
+      <div class="d-flex row container cont-halo">
+        <p class="f-2p text-center">Halo/Halo 2</p>
+        <div
+          class="bg-halo row  d-flex align-items-center justify-content-evenly gap-3 flex-wrap"
+        >
+          <audio
+          class="col-md-3 col-5"
+            src="assets/sound/Halo Theme Song Original.mp3"
+            controls
+          ></audio>
+          <audio  class="col-md-4 col-5" src="assets/sound/The Last Spartan.mp3" controls></audio>
+          <audio
+          class="col-md-3 col-6"
+            src="assets/sound/Follow (1st Movement of the Odyssey).mp3"
+            controls
+          ></audio>
+          <audio class="col-3 out" src="assets/sound/Covenant Dance.mp3" controls></audio>
+          <audio class="col-4 out" src="assets/sound/On a Pale Horse.mp3" controls></audio>
+          <audio class="col-4 out"
+          src="assets/sound/Rock Anthem for Saving the World.mp3"
+            controls
+          ></audio>
+        </div>
+      </div>
+      <div class="cont-mega-man">
+        <p class="f-2p text-center">mega man 2</p>
+        <div
+          class="bg-aud d-flex justify-content-evenly gap-3 align-items-center m-meg"
+        >
+          <audio src="assets/sound/Dr. Wily Stage 1.mp3" controls></audio>
+          <audio src="assets/sound/Wood Man Stage.mp3" controls></audio>
+        </div>
+      </div>
+      <div class="cont-zelda">
+        <p class="f-2p text-center">The legend of Zelda: Majora's mask</p>
+        <div
+          class="bg-aud d-flex align-items-center justify-content-evenly gap-3"
+        >
+          <audio src="assets/sound/Deku Palace.mp3" controls></audio>
+          <audio
+            src="assets/sound/Magic Hags' Potion Shop.mp3"
+            controls
+          ></audio>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="row d-flex flex-column justify-content-center py-4 container-fluid"
+    >
+      <section class="d-flex justify-content-center container-fluid gap-3 py-4">
+        <img
+          class="img-fluid img-width"
+          src="assets/img/logo-facebook.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="assets/img/logo-instagram.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="assets/img/logo-twitter.png"
+          alt=""
+        />
+        <img class="img-fluid img-width" src="assets/img/logo-ws.png" alt="" />
+      </section>
+      <section
+        class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
+      >
+        <p class="fw-bold h4 text-center">Buscanos en redes sociales como GG.red</p>
+        <a p class="nav-link h3 text-black fw-bold py-3" href=""
+          >Comunicate con nosotros</a
+        >
         <p class="fw-bold h6">© Copyrights 2023</p>
-        </section>
-    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-</body>
+      </section>
+      <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    </footer>
+  </body>
 </html>

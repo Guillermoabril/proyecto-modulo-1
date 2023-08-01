@@ -1,78 +1,85 @@
-.bg-body{
-    background-color: #1D1459 !important;
+.bg-body {
+  background-color: #1d1459 !important;
 }
 .first-menu {
-    color:#BBF2ED;
-    transition: color 0.5s;
-  }
-  .first-menu:hover{
-    color: #e3f8f6;
-  }
-  .pag-act{
-    color: #932CBF;
-    transition: color 0.5s;
-  }
-  .pag-act:hover{
-    color: #ad47d8;
-  }
-  
+  color: #bbf2ed;
+  transition: color 0.5s;
+}
+.first-menu:hover {
+  color: #e3f8f6;
+}
+.pag-act {
+  color: #932cbf;
+  transition: color 0.5s;
+}
+.pag-act:hover {
+  color: #ad47d8;
+}
+
 .logo {
-    width: 40px !important;
-    height: 30px !important;
-    padding-right: 10px;
-  }
-  .form-search {
-    border: 4px solid #BBF2ED;
-  }
-  
-  .btn-search-menu {
-    background-color: #BBF2ED;
-  }
-  .btn-search-menu:hover {
-    background-color: #29f2de;
-  }
-  
-  .second-menu-list {
-    color: #29f2de !important;
-  } 
-.bg-nav{
-    background-color: #140D43 !important;
+  width: 40px !important;
+  height: 30px !important;
+  padding-right: 10px;
 }
-.img-fondo{
-    background-image: url(assets-rec/img/f-4.png);
-    width: 100%;
-    height: 80vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.form-search {
+  border: 4px solid #bbf2ed;
 }
-.f-2p{
-    font-family: 'Press Start 2P', cursive;
-    color: #29f2de;
+
+.btn-search-menu {
+  background-color: #bbf2ed;
 }
-.cont-cuadritos{
-    width: 60%;
-    height: 50vh;
+.btn-search-menu:hover {
+  background-color: #29f2de;
 }
-.cont-cuad-horz{
+.second-menu li {
+  list-style: none;
+  margin-bottom: 10%;
+}
+.second-menu-list {
+  color: #f27eea !important;
+  transform: color 0.4s;
+}
+.second-menu-list:hover {
+  color: #f7aaf2 !important;
+}
+.bg-nav {
+  background-color: #140d43 !important;
+}
+.img-fondo {
+  background-image: url(assets-rec/img/f-4.png);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.f-2p {
+  font-family: "Press Start 2P", cursive;
+  color: #29f2de;
+}
+.cont-cuadritos {
+  width: 60%;
+  height: 50vh;
+}
+.cont-cuad-horz {
   height: 50vh;
   width: 100%;
 }
-.c-hor{
-    background-color:#090826;
-    height: 17vh;
-    width: 90%;
-    border-radius: 40px;
+.c-hor {
+  background-color: #090826;
+  height: 17vh;
+  width: 90%;
+  border-radius: 40px;
 }
-.f-rec{
-    color: #29f2de;
+.f-rec {
+  color: #29f2de;
 }
-.w-c{
+.w-c {
   width: 60%;
 }
-.c-g{
+.c-g {
   width: 40%;
 }
-.cuad-gord{
+.cuad-gord {
   background-color: #090826;
   border-radius: 40px;
   width: 80%;
@@ -81,9 +88,124 @@
 .img-width {
   width: 2rem;
 }
-.cuad-az{
+.cuad-az {
   width: 18%;
   height: 350px;
   border-radius: 10px;
-  background-color: #29F2DE;
+  background-color: #29f2de;
+}
+@media (max-width: 768px) {
+  .img-fondo {
+    background-position: -2rem 3rem;
+    background-size: cover;
+  }
+  .cont-cuadritos {
+    width: 100%;
+    height: 50vh;
+  }
+  .cont-cuad-horz {
+    height: 50vh;
+    width: 100%;
+  }
+  .f-rec {
+    color: #29f2de;
+  }
+  .cuad-az {
+    width: 24%;
+    height: 40vh;
+  }
+  .w-li-2 {
+    width: 90% !important;
+    height: 30vh !important;
+  }
+}
+.m-i {
+  margin-top: 5%;
+}
+@media (max-width: 425px){
+  .img-fondo {
+    background-position: -16.3rem 2rem;
+    background-size: cover;
+  }
+  .f-nav{
+    font-size: 13px;
+  }
+  .space-width {
+    width: 20%;
+    margin-left: -5px;
+}
+  .b-busqueda {
+    display: none;
+  }
+  .cont-cuadritos {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont-cuad-horz {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+  }
+  .c-hor{
+    height: 15vh;
+    width: 100%;
+  }
+  .w-c{
+    width: 100%;
+  }
+  .cuad-gord{
+    height: 30vh;
+    width: 80%;
+  }
+  .c-g{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .f-rec {
+    color: #29f2de;
+    font-size: 13px !important;
+    font-weight: 500;
+  }
+  .cuad-az {
+    margin-top: 10%;
+    width: 40%;
+    height: 40vh;
+  }
+  .t-tu{
+    height: 40px !important;
+  }
+  .w-li-2 {
+    width: 90% !important;
+    height: 30vh !important;
+  }
+  .g-im{
+    display: none !important;
+  }
+  .f-r{
+    font-size: medium;
+  }
+}
+@media (max-width: 425px){
+  .img-fondo {
+    background-position: -16.3rem 2rem;
+    background-size: cover;
+  }
+  .logo{
+    margin-right: -33px;
+  }
+  .f-nav{
+    font-size: 13px;
+  }
+  .space-width {
+    width: 20%;
+    margin-left: -60px;
+}
+  .b-busqueda {
+    display: none;
+  }
 }
