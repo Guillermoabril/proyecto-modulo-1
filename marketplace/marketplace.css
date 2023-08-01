@@ -25,6 +25,15 @@
   
   .second-menu-list {
     color: #29f2de !important;
+    transition: color 0.4s;
+  }
+
+  .second-menu-list:hover {
+    color: #9dece4 !important;
+  }
+
+  .second-menu li {
+    list-style: none;
   }
 
   .bg-marketplace {
@@ -57,7 +66,7 @@
 
   @media only screen and (max-width: 576px) {
     .navbar a {
-      font-size: 15px !important;
+      font-size: 14px !important;
       font-weight: bold;
       display: flex;
       text-align: start;
@@ -65,10 +74,15 @@
     .navbar {
       display: flex;
       justify-items: left;
-      justify-content: space-between;
     }
     .margin-dropdown{
       margin-bottom: 5px !important;
+    }
+    .t-barra {
+      width: 70%;
+    }
+    .space-width {
+      width: 44%;
     }
   }
 
@@ -78,4 +92,15 @@
 
   .m-i {
     margin-top: 3.5%;
+  }
+
+  @media only screen and (max-width: 360px) {
+    .b-busqueda {
+      display: none;
+    }
+    .space-width {
+      width: 12%;
+      margin-right: 6px;
+  }
+
   }
