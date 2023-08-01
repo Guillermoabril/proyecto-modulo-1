@@ -87,3 +87,42 @@
   border-radius: 10px;
   background-color: #29F2DE;
 }
+ @media (max-width: 768px){
+  .img-fondo{
+    background-position: center 3rem;
+    background-size: cover;
+  }
+  .med-nav{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .cont-cuadritos{
+    width: 60%;
+    height: 50vh;
+}
+.cont-cuad-horz{
+  height: 50vh;
+  width: 100%;
+}
+.c-hor{
+    background-color:#090826;
+    height: 17vh;
+    width: 90%;
+    border-radius: 40px;
+}
+.f-rec{
+    color: #29f2de;
+}
+.w-c{
+  width: 60%;
+}
+.c-g{
+  width: 40%;
+}
+.cuad-gord{
+  background-color: #090826;
+  border-radius: 40px;
+  width: 80%;
+  height: 40vh;
+}
+ }
