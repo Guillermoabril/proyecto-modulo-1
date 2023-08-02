@@ -18,31 +18,38 @@
     </html>
   </head>
   <body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-      <div class="container-fluid justify-content-around">
-        <a class="navbar-brand first-menu" href="/torneos/torneos.html"
-          >Torneos</a
-        >
-        <a class="navbar-brand first-menu" href="chats/Chats.html"
-          >canales de chat</a
-        >
-        <a
-          class="navbar-brand pag-act"
-          href="recomendaciones/recomendaciones.html"
-          >Recomendaciones</a
-        >
-        <a class="navbar-brand first-menu" href="Noticias/noticias.html"
-          >Noticias</a
-        >
-        <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html"
-          >Soundtracks</a
-        >
-        <a class="navbar-brand first-menu" href="marketplace/marketplace.html"
-          >Tienda</a
-        >
-        <a class="navbar-brand first-menu" href="comunidad/comunidad.html"
-          >Ayuda a la comunidad</a
-        >
+  <nav class="navbar bg-nav fixed-top d-flex">
+    <div class="container-fluid d-flex justify-content-between">
+      <div class="d-flex justify-content-between">
+        <a class="navbar-brand" href="/index.html"
+          ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+        /></a>
+         <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a> 
+          <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
+          <li class="nav-item dropdown first-menu m-i">
+            <a class="nav-link f-nav dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Idiomas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+      </div>
+      <div class="d-flex gap-3 space-width">
+        <form class="d-flex t-barra" role="search">
+          <input
+            class="form-control me-2 form-search b-busqueda"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Search"
+          />
+          <button class="btn btn-search-menu b-busqueda" type="submit">
+            Buscar
+          </button>
+        </form>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,7 +68,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              <img class="logo" src="assets-rec/img/logo.png" alt="" />
+              <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
               GG.red
             </h5>
             <button
@@ -72,100 +79,108 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list"
-              >
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
+            <div class="offcanvas-body second-menu">
+              <ul>
+                <li>
                   <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    class="navbar-brand second-menu-list"
+                    href="/torneos/torneos.html"
+                    >Torneos</a
                   >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/chats/Chats.html"
+                    >canales de chat</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/recomendaciones/recomendaciones.html"
+                    >Recomendaciones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/Noticias/noticias.html"
+                    >Noticias</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/soundtracks/soundtracks.html"
+                    >Soundtracks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/marketplace/marketplace.html"
+                    >Tienda</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navbar-brand second-menu-list"
+                    href="/comunidad/comunidad.html"
+                    >Ayuda a la comunidad</a
+                  >
                 </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">
-                  Buscar
-                </button>
-              </form>
             </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
     <div class="img-fondo"></div>
     <p class="f-2p text-center fs-4 mt-3">Mejores juegos para PC</p>
     <section class="d-flex justify-content-center">
       <ul class="list-group-numbered">
-        <li class="f-2p list-group-item">
+        <li class="f-2p img-c text-center list-group-item">
           Half-Life 2
           <span
             ><img
+            class=""
               src="assets/img-pc/Half-Life_2_cover.jpg"
               style="height: 200px"
               alt=""
           /></span>
         </li>
-        <li class="f-2p list-group-item mt-3">
+        <li class="f-2p img-c text-center list-group-item mt-3">
           BioShock
           <span
             ><img
+            class=""
               src="assets/img-pc/BioShock.jpg"
               class="ms-5"
               style="height: 200px"
               alt=""
           /></span>
         </li>
-        <li class="f-2p list-group-item mt-3">
+        <li class="f-2p img-c text-center list-group-item mt-3">
           The Elder Scrolls V: Skyrim
           <span
             ><img src="assets/img-pc/Skyrim.jpg" style="height: 200px"
           /></span>
         </li>
-        <li class="f-2p list-group-item mt-3">
+        <li class="f-2p img-c text-center list-group-item mt-3">
           Mass Effect 2
           <span
-            ><img src="assets/img-pc/MassEffect2.png" style="height: 200px"
+            ><img src="assets/img-pc/MassEffect2.png" class="" style="height: 200px"
           /></span>
         </li>
-        <li class="f-2p list-group-item mt-3">
+        <li class="f-2p img-c text-center list-group-item mt-3">
           Diablo
           <span
-            ><img src="assets/img-pc/Diablo.jpg" style="height: 200px" alt=""
+            ><img class="" src="assets/img-pc/Diablo.jpg" style="height: 200px" alt=""
           /></span>
         </li>
-        <li class="f-2p list-group-item mt-3">
+        <li class="f-2p img-c text-center list-group-item mt-3">
           Counter Strike: Global Ofensive
           <span
             ><img
@@ -173,26 +188,27 @@
               style="height: 100px; width: 200px"
           /></span>
         </li>
-        <li class="f-2p list-group-item mt-3">
+        <li class="f-2p img-c text-center list-group-item mt-3">
           Team Fortress 2
-          <span><img src="assets/img-pc/Tf2.jpg" style="height: 200px" /></span>
+          <span><img src="assets/img-pc/Tf2.jpg" class="" style="height: 200px" /></span>
         </li>
-        <li class="f-2p list-group-item mt-3">
+        <li class="f-2p img-c text-center list-group-item mt-3">
           Halo 2
           <span
-            ><img src="assets/img-pc/halo2.jpg" style="height: 200px" alt=""
+            ><img src="assets/img-pc/halo2.jpg" class="" style="height: 200px" alt=""
           /></span>
         </li>
-        <li class="f-2p list-group-item">
+        <li class="f-2p img-c list-group-item text-center">
           Star Wars: Knights of the Old Republic
           <span>
-            <img src="assets/img-pc/star-wars.jpg" style="height: 200px" alt=""
+            <img src="assets/img-pc/star-wars.jpg" class="" style="height: 200px" alt=""
           /></span>
         </li>
-        <li class="f-2p list-group-item">
+        <li class="f-2p img-c text-center list-group-item">
           Left 4 Dead
           <span
             ><img
+            class=""
               src="assets/img-pc/Left4Dead.jpg"
               style="height: 200px"
               alt=""
@@ -228,13 +244,13 @@
       <section
         class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
       >
-        <p class="fw-bold h4">Buscanos en redes sociales como GG.red</p>
+        <p class="fw-bold h4 text-center">Buscanos en redes sociales como GG.red</p>
         <a p class="nav-link h3 text-black fw-bold py-3" href=""
           >Comunicate con nosotros</a
         >
         <p class="fw-bold h6">© Copyrights 2023</p>
       </section>
     </footer>
-    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
