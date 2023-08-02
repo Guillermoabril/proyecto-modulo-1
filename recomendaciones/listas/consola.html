@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M. Juegos para consola</title>
     <!DOCTYPE html>
-<html lang="en">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="consola.css">
-</head>
-<body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand first-menu" href="/torneos/torneos.html">Torneos</a>
-          <a class="navbar-brand first-menu" href="chats/Chats.html">canales de chat</a>
-          <a class="navbar-brand pag-act" href="recomendaciones/recomendaciones.html">Recomendaciones</a>
-          <a class="navbar-brand first-menu" href="Noticias/noticias.html">Noticias</a>
-          <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html">Soundtracks</a>
-          <a class="navbar-brand first-menu" href="marketplace/marketplace.html">Tienda</a>
-          <a class="navbar-brand first-menu" href="comunidad/comunidad.html">Ayuda a la comunidad</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <html lang="en">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="consola.css" />
+    </html>
+  </head>
+  <body class="bg-body">
+    <nav class="navbar bg-nav fixed-top d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand" href="/index.html"
+            ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+          /></a>
+          <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a>
+          <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
+          <li class="nav-item dropdown first-menu m-i">
+            <a
+              class="nav-link f-nav dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Idiomas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </div>
+        <div class="d-flex gap-3 space-width">
+          <form class="d-flex t-barra" role="search">
+            <input
+              class="form-control me-2 form-search b-busqueda"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-search-menu b-busqueda" type="submit">
+              Buscar
             </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div
             class="offcanvas offcanvas-end text-bg-dark"
             tabindex="-1"
@@ -31,7 +74,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img class="logo" src="assets-rec/img/logo.png" alt="" />
+                <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
                 GG.red
               </h5>
               <button
@@ -42,80 +85,319 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">Buscar</button>
-              </form>
+              <div class="offcanvas-body second-menu">
+                <ul>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/torneos/torneos.html"
+                      >Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/chats/Chats.html"
+                      >canales de chat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/recomendaciones/recomendaciones.html"
+                      >Recomendaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/Noticias/noticias.html"
+                      >Noticias</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/soundtracks/soundtracks.html"
+                      >Soundtracks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/marketplace/marketplace.html"
+                      >Tienda</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/comunidad/comunidad.html"
+                      >Ayuda a la comunidad</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="img-fondo"></div>
-      <h1 class="f-2p fs-4 text-center mt-3">Mejores juegos para consola</h1>
-      <section class="d-flex justify-content-center mt-3">
-        <ul class="list-group-numbered">
-        <li class="list-group-item f-2p"> Blooborne <img src="assets/img-pc/Bloodborne.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> Shadow of the Colossus <img src="assets/img-pc/shadow.jpg" style="height: 200px;" alt=""> </li>
-        <li class="list-group-item f-2p mt-2"> Forza Horizon 4 <img src="assets/img-pc/forza.jpg" style="height: 100px; width: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> Bayonetta 2 <img src="assets/img-pc/bayonetta-2.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> Gears of War 2 <img src="assets/img-pc/gears.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> God of War <img src="assets/img-pc/god-of-war-ghost-of-sparta.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> Super Mario Odyssey <img src="assets/img-pc/Super_Mario_Odyssey.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> Halo 3 <img src="assets/img-pc/halo3.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> The Last of Us <img src="assets/img-pc/The_Last_of_Us.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2"> The Legend of Zelda: Breath of the Wild <img src="assets/img-pc/The_Legend_of_Zelda_Breath_of_the_Wild.jpg" style="height: 200px;" alt=""></li>
-      </ul>
+      </div>
+    </nav>
+    <div class="img-fondo"></div>
+    <h1 class="f-2p fs-4 text-center mt-3">Mejores juegos para consola</h1>
+    <div class="container-fluid container">
+      <section class="d-flex justify-content-center row flex-wrap gap-5">
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Bloodborne.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Blooborne</h5>
+                <p class="card-text text-info fs-5">
+                  Bloodborne nos lleva a la decrépita ciudad de Yharnam, cuyos
+                  habitantes han sido infectados por una misteriosa enfermedad
+                  sanguínea.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/shadow.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Shadow of the Colossus</h5>
+                <p class="card-text text-info fs-5">
+                  El juego trata de un joven, conocido únicamente como Wander (del inglés wanderer, 'alguien que deambula').
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/forza.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Forza Horizon 4</h5>
+                <p class="card-text text-info fs-5">
+                  Forza Horizon 4 es un juego de conducción en mundo abierto, que esta vez nos lleva hasta el Reino Unido.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/bayonetta-2.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Bayonetta 2</h5>
+                <p class="card-text text-info fs-5">
+                 Bayonetta inicia una peligrosa búsqueda para rescatar a su amiga antes de que sea demasiado tarde.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/gears.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Gears of War 2</h5>
+                <p class="card-text text-info fs-5">
+                  La Coalición de Gobiernos Organizados (CGO), es la fuerza militar del planeta Sera, que luchan contra los locust desde el Día de la Emergencia o Día-E. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/god-of-war-ghost-of-sparta.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">God of War</h5>
+                <p class="card-text text-info fs-5">
+                  un enorme guerrero con poderes divinos que, primero por venganza y, después, por proteger a su familia, se ve abocado a acabar primero con toda la mitología griega
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Super_Mario_Odyssey.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Super Mario Odyssey</h5>
+                <p class="card-text text-info fs-5">
+                  El jugador controla a un personaje llamado Mario, que debe salvar a la Princesa Peach que lo secuestrado por el villano Bowser.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/halo3.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Halo 3</h5>
+                <p class="card-text text-info fs-5">
+                  Cuando destino de la galaxia pende de un hilo, el Jefe Maestro regresa para descubrir un antiguo secreto escondido bajo las arenas de África.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/The_Last_of_Us.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">
+                  The Last of Us
+                </h5>
+                <p class="card-text text-info fs-5">
+                  se desata una pandemia en Estados Unidos ocasionada por una cepa del hongo Cordyceps, que al infectar a los humanos los convierte en criaturas caníbales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/The_Legend_of_Zelda_Breath_of_the_Wild.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">The Legend of Zelda: Breath of the Wild</h5>
+                <p class="card-text text-info fs-5">
+                  Los sheikah construyen a los Guardianes y a las Bestias divinas para ayudar a defenderse del ataque de Ganon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <footer class="row d-flex flex-column justify-content-center py-4 container-fluid">
-        <section class="d-flex justify-content-center container-fluid gap-3 py-4">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-facebook.png" alt="">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-instagram.png" alt="">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-twitter.png" alt="">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-ws.png" alt="">
-
-        </section>
-        <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
-        <p class=" fw-bold h4">Buscanos en redes sociales como GG.red</p>
-        <a p class="nav-link h3 text-black fw-bold py-3" href="">Comunicate con nosotros</a>
+    </div>
+    <footer
+      class="row d-flex flex-column justify-content-center py-4 container-fluid"
+    >
+      <section class="d-flex justify-content-center container-fluid gap-3 py-4">
+        <img
+          class="img-fluid img-width"
+          src="assets/img-pc/logo-facebook.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="assets/img-pc/logo-instagram.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="assets/img-pc/logo-twitter.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="assets/img-pc/logo-ws.png"
+          alt=""
+        />
+      </section>
+      <section
+        class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
+      >
+        <p class="fw-bold h4">Buscanos en redes sociales como GG.red</p>
+        <a p class="nav-link h3 text-black fw-bold py-3" href=""
+          >Comunicate con nosotros</a
+        >
         <p class="fw-bold h6">© Copyrights 2023</p>
-        </section>
+      </section>
     </footer>
     <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
+</html>
