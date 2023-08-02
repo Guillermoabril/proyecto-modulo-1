@@ -9,6 +9,11 @@ body {
 }
 .first-menu {
   color: #f07ef2;
+  transition: color 0.4s;
+}
+
+.first-menu:hover {
+  color: #edd2edf4;
 }
 
 .logo {
@@ -29,6 +34,15 @@ body {
 
 .second-menu-list {
   color: #29f2de !important;
+  transition: color 0.4s;
+}
+.second-menu-list:hover {
+  color: #9dece4 !important;
+}
+
+.second-menu li {
+  list-style: none;
+  margin-bottom: 10%;
 }
 
 .principal-container {
@@ -181,13 +195,24 @@ body {
 }
 
 .card-button {
-  margin-left: 60px;
+  margin-left: 35%;
   background-color: #f27eea;
 }
 
 .img-width {
   width: 2rem;
   height: 2rem;
+}
+
+.img-width-f {
+  width: 4rem;
+}
+
+.font-color-footer {
+  color: #BBF2ED;
+}
+.text-products{
+  color: #29F2DE;
 }
 
 @media (max-width: 768px) {
@@ -232,4 +257,23 @@ body {
   .card-button {
     margin-left: 30px;
   }
+}
+
+.second-menu-list li{
+  display: inline-block !important;
+}
+
+.m-i {
+  margin-top: 3.5%;
+}
+
+@media only screen and (max-width: 360px) {
+  .b-busqueda {
+    display: none;
+  }
+  .space-width {
+    width: 12%;
+    margin-right: 6px;
+}
+
 }
