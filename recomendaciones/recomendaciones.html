@@ -21,30 +21,22 @@
     <nav class="navbar bg-nav fixed-top d-flex">
       <div class="container-fluid d-flex justify-content-between">
         <div class="d-flex justify-content-between">
-          <span class="navbar-brand"
+          <a class="navbar-brand" href="/index.html"
             ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
-          /></span>
-          <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a>
-          <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
-          <a
-            class="nav-link dropdown-toggle first-menu f-nav m-i"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Idiomas
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider" />
+          /></a>
+           <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a> 
+            <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
+            <li class="nav-item dropdown first-menu m-i">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Idiomas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
         </div>
         <div class="d-flex gap-3 space-width">
           <form class="d-flex t-barra" role="search">
@@ -303,6 +295,6 @@
         <p class="fw-bold text-center h6">© Copyrights 2023</p>
       </section>
     </footer>
-    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
