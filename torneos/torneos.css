@@ -1,138 +1,148 @@
 .first-menu {
-    color: #f07ef2;
-    transition: color 0.4s;
-  }
-  .bg-nav{
-    background-color: #090826;
-  }
-  .img-fond{
-    background-image: url(img/zyro-image.png);
-    width: 100%;
-    height: 55vh;
-    background-position: -0rem -18rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .first-menu:hover {
-    color: #edd2edf4;
-  }
-  
-  .logo {
-    width: 40px !important;
-    height: 30px !important;
-    padding-right: 10px;
-  }
-  .form-search {
-      border: 4px solid #f07ef2;
-    }
-    
-    .btn-search-menu {
-      background-color: #f07ef2;
-    }
-    .btn-search-menu:hover {
-      background-color: #29f2de;
-    }
-    
-    .second-menu-list {
-      color: #29f2de !important;
-      transition: color 0.4s;
-    }
-    .second-menu-list:hover {
-      color: #9dece4 !important;
-    }
-  
-    .second-menu li {
-      list-style: none;
-      margin-bottom: 10%;
-    }
-  
-    .img-width {
-      width: 4rem;
-    }
-  
-    .font-color-footer {
-      color: #BBF2ED;
-    }
-    .text-products{
-      color: #29F2DE;
-    }
-  
-    .bg-text-news{
-      background-color: #BBF2ED;
-    }
-  
-    .bg-borders {
-      background-color: #071540;
-      border-radius: 5%;
-    }
-    
-    .bg-borders2 {
-      background-color: #071540;
-    }
-  
-    @media only screen and (max-width: 576px) {
-      .navbar a {
-        font-size: 14px !important;
-        font-weight: bold;
-        display: flex;
-        text-align: start;
-      } 
-      .navbar {
-        display: flex;
-        justify-items: left;
-      }
-      .margin-dropdown{
-        margin-bottom: 5px !important;
-      }
-      .t-barra {
-        width: 70%;
-      }
-      .space-width {
-        width: 44%;
-      }
-      .text-products{
-        padding-top: 2rem !important;
-    }
-
-    }
-  
-    .second-menu-list li{
-      display: inline-block !important;
-    }
-
-  
-    .m-i {
-      margin-top: 3.5%;
-    }
-  
-  
-    @media only screen and (max-width: 360px) {
-      .b-busqueda {
-        display: none;
-      }
-      .space-width {
-        width: 12%;
-        margin-right: 6px;
-    }
-
-    .text-products{
-        padding-top: 5rem !important;
-    }
-  
-    }
-
-    .main-stylo {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-.ajustes-section{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: #103173;
+  color: #f07ef2;
+  transition: color 0.4s;
+}
+.bg-nav {
+  background-color: #090826;
+}
+.img-fond {
+  background-image: url(img/zyro-image.png);
+  width: 100%;
+  height: 55vh;
+  background-position: -0rem -18rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.logo-torneo{
-    padding-right: 2rem;
+.first-menu:hover {
+  color: #edd2edf4;
+}
+
+.logo {
+  width: 40px !important;
+  height: 30px !important;
+  padding-right: 10px;
+}
+.form-search {
+  border: 4px solid #f07ef2;
+}
+
+.btn-search-menu {
+  background-color: #f07ef2;
+}
+.btn-search-menu:hover {
+  background-color: #29f2de;
+}
+
+.second-menu-list {
+  color: #29f2de !important;
+  transition: color 0.4s;
+}
+.second-menu-list:hover {
+  color: #9dece4 !important;
+}
+
+.second-menu li {
+  list-style: none;
+  margin-bottom: 10%;
+}
+
+.img-width {
+  width: 4rem;
+}
+
+.font-color-footer {
+  color: #bbf2ed;
+}
+.text-products {
+  color: #29f2de;
+}
+
+.bg-text-news {
+  background-color: #bbf2ed;
+}
+
+.bg-borders {
+  background-color: #071540;
+  border-radius: 5%;
+}
+
+.bg-borders2 {
+  background-color: #071540;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar a {
+    font-size: 14px !important;
+    font-weight: bold;
+    display: flex;
+    text-align: start;
+  }
+  .navbar {
+    display: flex;
+    justify-items: left;
+  }
+  .margin-dropdown {
+    margin-bottom: 5px !important;
+  }
+  .t-barra {
+    width: 70%;
+  }
+  .space-width {
+    width: 44%;
+  }
+  .text-products {
+    padding-top: 2rem !important;
+  }
+}
+
+.second-menu-list li {
+  display: inline-block !important;
+}
+
+.m-i {
+  margin-top: 3.5%;
+}
+
+@media only screen and (max-width: 360px) {
+  .b-busqueda {
+    display: none;
+  }
+  .space-width {
+    width: 12%;
+    margin-right: 6px;
+  }
+
+  .text-products {
+    padding-top: 5rem !important;
+  }
+}
+
+.main-stylo {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.ajustes-section {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #103173;
+}
+
+.logo-torneo {
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .img-fond {
+    height: 70vh;
+    background-position: -0rem -5rem;
+  }
+  .title-torneos {
+    margin-top: -160px;
+  }
+  .logo-torneo {
+    margin-top: 1rem;
+    width: 70px;
+  }
 }
