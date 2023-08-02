@@ -9,7 +9,12 @@ body {
 }
 .first-menu {
   color: #f07ef2;
+  transition: color 0.4s;
 }
+
+  .first-menu:hover {
+    color: #edd2edf4;
+  }
 
 .logo {
   width: 40px !important;
@@ -29,7 +34,16 @@ body {
 
 .second-menu-list {
   color: #29f2de !important;
+  transition: color 0.4s;
 }
+
+  .second-menu-list:hover {
+    color: #9dece4 !important;
+  }
+
+    .second-menu li {
+    list-style: none;
+  }
 
 .f-not {
   font-family: "Press Start 2P", cursive;
@@ -97,3 +111,55 @@ body {
   width: 2rem;
   height: 2rem;
 }
+
+  .img-width-f {
+    width: 4rem;
+  }
+
+  .font-color-footer {
+    color: #BBF2ED;
+  }
+  .text-products{
+    color: #29F2DE;
+  }
+
+    @media only screen and (max-width: 576px) {
+    .navbar a {
+      font-size: 14px !important;
+      font-weight: bold;
+      display: flex;
+      text-align: start;
+    } 
+    .navbar {
+      display: flex;
+      justify-items: left;
+    }
+    .margin-dropdown{
+      margin-bottom: 5px !important;
+    }
+    .t-barra {
+      width: 70%;
+    }
+    .space-width {
+      width: 44%;
+    }
+  }
+
+  .second-menu-list li{
+    display: inline-block !important;
+  }
+
+  .m-i {
+    margin-top: 3.5%;
+  }
+
+  @media only screen and (max-width: 360px) {
+    .b-busqueda {
+      display: none;
+    }
+    .space-width {
+      width: 12%;
+      margin-right: 6px;
+  }
+
+  }
