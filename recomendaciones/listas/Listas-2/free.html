@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gratuitos</title>
     <!DOCTYPE html>
-<html lang="en">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="top-retro.css">
-</head>
-<body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand first-menu" href="../../../torneos/torneos.html">Torneos</a>
-          <a class="navbar-brand first-menu" href="../../../chats/Chats.html">canales de chat</a>
-          <a class="navbar-brand pag-act" href="../../../recomendaciones/recomendaciones.html">Recomendaciones</a>
-          <a class="navbar-brand first-menu" href="../../../Noticias/noticias.html">Noticias</a>
-          <a class="navbar-brand first-menu" href="../../../soundtracks/soundtracks.html">Soundtracks</a>
-          <a class="navbar-brand first-menu" href="../../../marketplace/marketplace.html">Tienda</a>
-          <a class="navbar-brand first-menu" href="../../../comunidad/comunidad.html">Ayuda a la comunidad</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <html lang="en">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="../../../assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="top-retro.css" />
+    </html>
+  </head>
+  <body class="bg-body">
+    <nav class="navbar bg-nav fixed-top d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand" href="/index.html"
+            ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+          /></a>
+          <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a>
+          <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
+          <div class="nav-item dropdown first-menu mt-2">
+            <a
+              class="nav-link f-nav dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Idiomas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex gap-3 space-width">
+          <form class="d-flex t-barra" role="search">
+            <input
+              class="form-control me-2 form-search b-busqueda"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-search-menu b-busqueda" type="submit">
+              Buscar
             </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div
             class="offcanvas offcanvas-end text-bg-dark"
             tabindex="-1"
@@ -31,7 +74,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img class="logo" src="../../assets-rec/img/logo.png" alt="" />
+                <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
                 GG.red
               </h5>
               <button
@@ -42,80 +85,323 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">Buscar</button>
-              </form>
+              <div class="offcanvas-body second-menu">
+                <ul>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/torneos/torneos.html"
+                      >Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/chats/Chats.html"
+                      >canales de chat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/recomendaciones/recomendaciones.html"
+                      >Recomendaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/Noticias/noticias.html"
+                      >Noticias</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/soundtracks/soundtracks.html"
+                      >Soundtracks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/marketplace/marketplace.html"
+                      >Tienda</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/comunidad/comunidad.html"
+                      >Ayuda a la comunidad</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="img-fondo"></div>
-      <h1 class="f-2p fs-4 text-center mt-3">Juegos gratuitos buenos</h1>
-      <section class="d-flex justify-content-center mt-3">
-        <ul class="list-group-numbered">
-        <li class="list-group-item f-2p">Destiny 2<img src="img/Destiny 2.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">EVE Online<img src="img/EVE Online.png" style="height:200px;" alt=""> </li>
-        <li class="list-group-item f-2p mt-2">Killer Instinct<img src="img/Killer Instinct.jpg" style="height:200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">Path of Exile<img src="img/Path of Exile.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">Warframe<img src="img/Warframe.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">League of Legends<img src="img/League of Legends.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">Apex Legends<img src="img/Apex Legends.jpg" style="width: 250px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">Valorant<img src="img/Valorant.jpg" style="width: 250px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">War Thunder<img src="img/War Thunder.jpg" style="height: 200px;" alt=""></li>
-        <li class="list-group-item f-2p mt-2">Rocket League<img src="../assets/img-pc/Rocket_League.jpg" style="height: 200px;" alt=""></li>
-      </ul>
+      </div>
+    </nav>
+    <div class="img-fondo"></div>
+    <h1 class="f-2p fs-4 text-center mt-3">Juegos gratuitos buenos</h1>
+    <div class="container-fluid container">
+      <section class="d-flex justify-content-center row flex-wrap gap-5">
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Destiny 2.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Destiny 2</h5>
+                <p class="card-text text-info fs-5">
+                  Esta secuela nos trasladará a la caída de la última ciudad ante las fuerzas invasoras dirigidas por Primus Ghaul, el comandante de la Legión Roja.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/EVE Online.png"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">EVE Online</h5>
+                <p class="card-text text-info fs-5">
+                  El jugador es capaz de pilotar diferentes naves espaciales recorriendo una parte de una galaxia a través de más de 7.800 sistemas estelares.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Killer Instinct.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Killer Instinct</h5>
+                <p class="card-text text-info fs-5">
+                  En un futuro no muy lejano, la contaminación es abundante y ha causado graves daños al medio ambiente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Path of Exile.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Path of Exile</h5>
+                <p class="card-text text-info fs-5">
+                  Eres un Exiliado esforzándote por sobrevivir en el oscuro continente de Wraeclast mientras luchas para conseguir poder que te permitirá vengarte de quienes te hicieron daño.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Warframe.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Warframe</h5>
+                <p class="card-text text-info fs-5">
+                  es un juego de acción cooperativo free to play en tercera persona, donde encarnaremos a un miembro de Tenno.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/League of Legends.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">League of Legends</h5>
+                <p class="card-text text-info fs-5">
+                  es un juego de estrategia por equipos en el que dos equipos de cinco campeones se enfrentan para ver quién destruye antes la base del otro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../assets/img-pc/Apex_legends_cover.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Apex Legends</h5>
+                <p class="card-text text-info fs-5">
+                  Shooter en primera persona, con diferentes heroes desbloqueables.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Valorant.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Valorant</h5>
+                <p class="card-text text-info fs-5">
+                  es un shooter táctico donde dos equipos de cinco jugadores se enfrentan entre ellos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/War Thunder.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">
+                  War Thunder
+                </h5>
+                <p class="card-text text-info fs-5">
+                  es un juego de combate MMO gratuito de vehículos militares usados en la Segunda Guerra Mundial y la guerra de Corea.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../assets/img-pc/Rocket_League.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Rocket League</h5>
+                <p class="card-text text-info fs-5">
+                  es un videojuego que combina el fútbol con los vehículos.  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <footer class="row d-flex flex-column justify-content-center py-4 container-fluid">
-        <section class="d-flex justify-content-center container-fluid gap-3 py-4">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-facebook.png" alt="">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-instagram.png" alt="">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-twitter.png" alt="">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-ws.png" alt="">
-
-        </section>
-        <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
-        <p class=" fw-bold h4">Buscanos en redes sociales como GG.red</p>
-        <a p class="nav-link h3 text-black fw-bold py-3" href="">Comunicate con nosotros</a>
+    </div>
+    <!--  -->
+    <!-- <section class="d-flex justify-content-center mt-3">
+        <ul class="list-group-numbered">
+        <li class="list-group-item f-2p mt-2"><img src="../assets/img-pc/Rocket_League.jpg" style="height: 200px;" alt=""></li>
+      </ul>
+      </section> -->
+    <footer
+      class="row d-flex flex-column justify-content-center py-4 container-fluid"
+    >
+      <section class="d-flex justify-content-center container-fluid gap-3 py-4">
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-facebook.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-instagram.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-twitter.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-ws.png"
+          alt=""
+        />
+      </section>
+      <section
+        class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
+      >
+        <p class="fw-bold h4">Buscanos en redes sociales como GG.red</p>
+        <a p class="nav-link h3 text-black fw-bold py-3" href=""
+          >Comunicate con nosotros</a
+        >
         <p class="fw-bold h6">© Copyrights 2023</p>
-        </section>
+      </section>
     </footer>
     <script src="../../../assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
+</html>
