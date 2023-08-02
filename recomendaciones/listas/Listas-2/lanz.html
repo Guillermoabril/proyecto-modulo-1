@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recientes</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanzamientos</title>
     <!DOCTYPE html>
-<html lang="en">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lanz.css">
-</head>
-<body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand first-menu" href="../../../torneos/torneos.html">Torneos</a>
-          <a class="navbar-brand first-menu" href="../../../chats/Chats.html">canales de chat</a>
-          <a class="navbar-brand pag-act" href="../../../recomendaciones/recomendaciones.html">Recomendaciones</a>
-          <a class="navbar-brand first-menu" href="../../../Noticias/noticias.html">Noticias</a>
-          <a class="navbar-brand first-menu" href="../../../soundtracks/soundtracks.html">Soundtracks</a>
-          <a class="navbar-brand first-menu" href="../../../marketplace/marketplace.html">Tienda</a>
-          <a class="navbar-brand first-menu" href="../../../comunidad/comunidad.html">Ayuda a la comunidad</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <html lang="en">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="../../../assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="top-retro.css" />
+    </html>
+  </head>
+  <body class="bg-body">
+    <nav class="navbar bg-nav fixed-top d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand" href="/index.html"
+            ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+          /></a>
+          <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a>
+          <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
+          <div class="nav-item dropdown first-menu mt-2">
+            <a
+              class="nav-link f-nav dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Idiomas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex gap-3 space-width">
+          <form class="d-flex t-barra" role="search">
+            <input
+              class="form-control me-2 form-search b-busqueda"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-search-menu b-busqueda" type="submit">
+              Buscar
             </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div
             class="offcanvas offcanvas-end text-bg-dark"
             tabindex="-1"
@@ -31,7 +74,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img class="logo" src="../../assets-rec/img/logo.png" alt="" />
+                <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
                 GG.red
               </h5>
               <button
@@ -42,80 +85,315 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">Buscar</button>
-              </form>
+              <div class="offcanvas-body second-menu">
+                <ul>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/torneos/torneos.html"
+                      >Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/chats/Chats.html"
+                      >canales de chat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/recomendaciones/recomendaciones.html"
+                      >Recomendaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/Noticias/noticias.html"
+                      >Noticias</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/soundtracks/soundtracks.html"
+                      >Soundtracks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/marketplace/marketplace.html"
+                      >Tienda</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/comunidad/comunidad.html"
+                      >Ayuda a la comunidad</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="img-fondo"></div>
-      <h1 class="f-2p fs-4 text-center mt-3">Mejores juegos de lo que lleva el 2023</h1>
-      <section class="d-flex justify-content-center mt-3">
-        <ul class="list-group-numbered">
-          <li class="f-2p list-group-item">Pikmin 4<span><img src="img/Pikmin 4.jpg" style="height: 200px;" alt=""></span></li>
-          <li class="f-2p list-group-item mt-3">Final Fantasy XVI<span><img src="img/Final Fantasy XVI.png" class="ms-5" style="height:  200px;" alt=""></span></li>
-          <li class="f-2p list-group-item mt-3">Diablo IV<span><img src="img/Diablo IV.jpg" style="height: 200px;"></span></li>
-          <li class="f-2p list-group-item mt-3">Street Fighter 6<span><img src="img/Street Fighter 6.jpg"  style=" height: 200px;"></span></li>
-          <li class="f-2p list-group-item mt-3">The Legend of Zelda: Tears of the Kingdom<span><img src="img/The Legend of Zelda_Tears of the Kingdom.jpg" style="width: 300px;"  alt=""></span></li>
-          <li class="f-2p list-group-item mt-3">Star Wars Jedi: Survivor<span><img src="img/Star Wars Jedi_Survivor.jpg" style="height: 200px;"></span></li>
-          <li class="f-2p list-group-item mt-3">Bayonetta Origins: Cereza and the Lost Demon<span><img src="img/Bayonetta Origins_Cereza and the Lost Demon.jpg" style=" height: 200px;"></span></li>
-          <li class="f-2p list-group-item mt-3">Hogwarts Legacy<span><img src="img/Hogwarts Legacy.jpg" style="width: 300px;" alt=""></span></li>
-          <li class="f-2p list-group-item mt-3">Metroid Prime Remastered<span> <img src="img/Metroid Prime Remastered.jpg" style="width: 300px;" alt=""></span></li>
-          <li class="f-2p list-group-item mt-3">Hi-Fi Rush<span><img src="img/Hi-Fi Rush.jpg" style="height: 200px;" alt=""></span></li>
-      </ul>
+      </div>
+    </nav>
+    <div class="img-fondo"></div>
+    <h1 class="f-2p fs-4 text-center mt-3">Mejores juegos de lo que lleva el 2023</h1>
+    <div class="container-fluid container">
+      <section class="d-flex justify-content-center row flex-wrap gap-5">
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Pikmin 4.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Pikmin 4</h5>
+                <p class="card-text text-info fs-5">
+                  el capitán Olimar, ya no es el personaje principal, sino que las acciones corren a cargo de un astronauta que se estrella en un planeta inhóspito donde va a recibir la ayuda de los Pikmin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Final Fantasy XVI.png"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Final Fantasy XVI</h5>
+                <p class="card-text text-info fs-5">
+                  Ambientado en el mundo de fantasía medieval; Valisthea, donde la gente vive cómodamente gracias a las montañas de cristal llamadas "Mothercrystals".
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Diablo IV.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Diablo IV</h5>
+                <p class="card-text text-info fs-5">
+                  nos desafía a sobrevivir frente a interminables hordas de monstruos, demonios y sanguinarios mercenarios.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Street Fighter 6.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Street Fighter 6</h5>
+                <p class="card-text text-info fs-5">
+                  En Street Fighter 6, los jugadores pueden viajar por todo el mundo para medir su habilidad en búsqueda de su fuerza interior.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/The Legend of Zelda_Tears of the Kingdom.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">The Legend of Zelda: Tears of the Kingdom</h5>
+                <p class="card-text text-info fs-5">
+                  Esta nueva aventura pretende llevarnos a las profundidades de un templo subterráneo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Star Wars Jedi_Survivor.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Star Wars Jedi: Survivor</h5>
+                <p class="card-text text-info fs-5">
+                  busca ser una respuesta directa a los comentarios de los jugadores tras disfrutar la primera entrega, garantizando ofrecer destinos enormes para explorar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Bayonetta Origins_Cereza and the Lost Demon.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p fs-5">Bayonetta Origins: Cereza and the Lost</h5>
+                <p class="card-text text-info fs-6">
+                  se enfrenta contra las hordas angelicales de Paradiso, a fin de descubrir la verdad sobre su pasado y lo que ella ha olvidado durante su sueño.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Hogwarts Legacy.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Hogwarts Legacy</h5>
+                <p class="card-text text-info fs-5">
+                  RPG de acción en un mundo abierto, ambientado en el mundo mágico del siglo XIX, el cual coloca a los jugadores en el centro de sus propias aventuras. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Metroid Prime Remastered.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Metroid Prime Remastered</h5>
+                <p class="card-text text-info fs-5">
+                  La historia está relacionada con los piratas espaciales y cómo experimentaban con los Metroid (una especie parasitaria que funcionaba como arma).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/Hi-Fi Rush.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Hi-Fi Rush</h5>
+                <p class="card-text text-info fs-5">
+                  es un juego de acción en el que los personajes, el mundo y el combate se sincronizan con estilo a la música. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <footer class="row d-flex flex-column justify-content-center py-4 container-fluid">
-        <section class="d-flex justify-content-center container-fluid gap-3 py-4">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-facebook.png" alt="">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-instagram.png" alt="">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-twitter.png" alt="">
-            <img class="img-fluid img-width" src="../assets/img-pc/logo-ws.png" alt="">
-
-        </section>
-        <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
-        <p class=" fw-bold h4">Buscanos en redes sociales como GG.red</p>
-        <a p class="nav-link h3 text-black fw-bold py-3" href="">Comunicate con nosotros</a>
+    </div>
+    <footer
+      class="row d-flex flex-column justify-content-center py-4 container-fluid"
+    >
+      <section class="d-flex justify-content-center container-fluid gap-3 py-4">
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-facebook.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-instagram.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-twitter.png"
+          alt=""
+        />
+        <img
+          class="img-fluid img-width"
+          src="../assets/img-pc/logo-ws.png"
+          alt=""
+        />
+      </section>
+      <section
+        class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
+      >
+        <p class="fw-bold h4">Buscanos en redes sociales como GG.red</p>
+        <a p class="nav-link h3 text-black fw-bold py-3" href=""
+          >Comunicate con nosotros</a
+        >
         <p class="fw-bold h6">© Copyrights 2023</p>
-        </section>
+      </section>
     </footer>
-    <script src="../../../assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-</body>
+    <script src="../../../assets/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

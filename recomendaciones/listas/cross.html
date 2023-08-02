@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M. juegos con crossplay</title>
     <!DOCTYPE html>
-<html lang="en">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="pc.css">
-</head>
-<body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand first-menu" href="/torneos/torneos.html">Torneos</a>
-          <a class="navbar-brand first-menu" href="chats/Chats.html">canales de chat</a>
-          <a class="navbar-brand pag-act" href="recomendaciones/recomendaciones.html">Recomendaciones</a>
-          <a class="navbar-brand first-menu" href="Noticias/noticias.html">Noticias</a>
-          <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html">Soundtracks</a>
-          <a class="navbar-brand first-menu" href="marketplace/marketplace.html">Tienda</a>
-          <a class="navbar-brand first-menu" href="comunidad/comunidad.html">Ayuda a la comunidad</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <html lang="en">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="pc.css" />
+    </html>
+  </head>
+
+  <body class="bg-body">
+    <nav class="navbar bg-nav fixed-top d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand" href="/index.html"
+            ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+          /></a>
+          <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a>
+          <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
+          <li class="nav-item dropdown first-menu m-i">
+            <a
+              class="nav-link f-nav dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Idiomas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </div>
+        <div class="d-flex gap-3 space-width">
+          <form class="d-flex t-barra" role="search">
+            <input
+              class="form-control me-2 form-search b-busqueda"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-search-menu b-busqueda" type="submit">
+              Buscar
             </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div
             class="offcanvas offcanvas-end text-bg-dark"
             tabindex="-1"
@@ -31,7 +75,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img class="logo" src="assets-rec/img/logo.png" alt="" />
+                <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
                 GG.red
               </h5>
               <button
@@ -42,80 +86,320 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">Buscar</button>
-              </form>
+              <div class="offcanvas-body second-menu">
+                <ul>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/torneos/torneos.html"
+                      >Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/chats/Chats.html"
+                      >canales de chat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/recomendaciones/recomendaciones.html"
+                      >Recomendaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/Noticias/noticias.html"
+                      >Noticias</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/soundtracks/soundtracks.html"
+                      >Soundtracks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/marketplace/marketplace.html"
+                      >Tienda</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/comunidad/comunidad.html"
+                      >Ayuda a la comunidad</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="img-fondo"></div>
-      <h1 class="f-2p fs-4 text-center mt-3">Mejores juegos con crossplay</h1>
-      <div class="d-flex justify-content-center mt-3">
-        <ul class="list-group-numbered">
-            <li class="f-2p list-group-item">Dead by Daylight <img src="assets/img-pc/Dead_by_Daylight.jpg" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Apex Legends <img src="assets/img-pc/Apex_legends_cover.jpg" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Genshin Impact <img src="assets/img-pc/genshin.jpg" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Street Fighter V <img src="assets/img-pc/Street_Fighter_V.png" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Rocket League <img src="assets/img-pc/Rocket_League.jpg" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Minecraft <img src="assets/img-pc/Minecraft_cove.png" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Overwatch 2 <img src="assets/img-pc/overwatch.jpg" style="height: 130px; width: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Fortnite: Battle Royale <img src="assets/img-pc/fortnite.png" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Final Fantasy XIV: A Realm Reborn <img src="assets/img-pc/finalfantasy.jpg" style="height: 200px;" alt=""></li>
-            <li class="list-group-item f-2p mt-3">Call of Duty: Warzone <img src="assets/img-pc/warzone.jpg" style="height: 200px;" alt=""></li>
-        </ul>
-    </div>
-      <footer class="row d-flex flex-column justify-content-center py-4 container-fluid">
-        <section class="d-flex justify-content-center container-fluid gap-3 py-4">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-facebook.png" alt="">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-instagram.png" alt="">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-twitter.png" alt="">
-            <img class="img-fluid img-width" src="assets/img-pc/logo-ws.png" alt="">
-
-        </section>
-        <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
-        <p class=" fw-bold h4">Buscanos en redes sociales como GG.red</p>
-        <a p class="nav-link h3 text-black fw-bold py-3" href="">Comunicate con nosotros</a>
-        <p class="fw-bold h6">© Copyrights 2023</p>
-        </section>
-    </footer>
-    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-</body>
+      </div>
+    </nav>
+    <div class="img-fondo"></div>
+    <h1 class="f-2p fs-4 text-center mt-3">Mejores juegos con crossplay</h1>
+    <div class="container-fluid container">
+      <div
+        class="d-flex justify-content-center gap-5 d-flex flex-wrap mt-3 row"
+      >
+        <div class="card bg-nav col-6 mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Dead_by_Daylight.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Dead by Daylight</h5>
+                <p class="card-text text-info fs-5">
+                  Este es un juego 4vs1 en el que un grupo supervivientes
+                  intentan huir de la caza de un asesino.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Apex_legends_cover.jpg"
+                class="img-fluid rounded-start"
+                style="height: 250px"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Apex Legends</h5>
+                <p class="card-text text-info fs-5">
+                  se desarrolla en un universo envolvente en el que la historia
+                  evoluciona continuamente, los mapas cambian y nuevas leyendas
+                  se unen a la lucha.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/genshin.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Genshin Impact</h5>
+                <p class="card-text text-info fs-5">
+                  es un videojuego de rol de acción de mundo abierto y gratuito,
+                  con una mecánica de monetización de gacha para conseguir
+                  elementos adicionales como personajes especiales y armas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Street_Fighter_V.png"
+                style="height: 250px;"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Street Fighter V</h5>
+                <p class="card-text text-info fs-5">
+                  El modo historia, llamado “A Shadow Falls”, tendrá una duración aproximada de entre 3 y 4 horas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Rocket_League.jpg"
+                style="height: 250px;"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Rocket League</h5>
+                <p class="card-text text-info fs-5">
+                es un videojuego que combina el fútbol con los vehículos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Minecraft_cove.png"
+                style="height: 250px;"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Minecraft</h5>
+                <p class="card-text text-info fs-5">
+                  es un videojuego de construcción de tipo «mundo abierto» o sandbox. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/overwatch2.jpg"
+                style="height: 250px;"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Overwatch 2</h5>
+                <p class="card-text text-info fs-5">
+                  Shooter de heroes, ahora, Overwatch 2 incorpora un sistema de subida de niveles y árbol de talentos para los héroes que utilicemos durante los modos PvE.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/fortnite.png"
+                style="height: 250px;"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Battle Royale</h5>
+                <p class="card-text text-info fs-5">
+                  juego de tipo Battle Royale en el que compiten hasta cien jugadores en solitario, dúos, tríos o escuadrones.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/finalfantasy.jpg"
+                style="height: 250px;"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Final Fantasy XIV: A Realm Reborn</h5>
+                <p class="card-text text-info fs-5">
+                  the Elder Primal Bahamut escaped from his prison, an ancient space station called Dalamud, unleashing an apocalypse across Eorzea.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/warzone.jpg"
+                style="height: 250px;"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Call of Duty: Warzone</h5>
+                <p class="card-text text-info fs-5">
+                  Free to Play for Everyone. Experience classic Call of Duty® first-person combat in an all-new, massive arena for 150 players. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+        <footer
+          class="row d-flex flex-column justify-content-center py-4 container-fluid"
+        >
+          <section
+            class="d-flex justify-content-center container-fluid gap-3 py-4"
+          >
+            <img
+              class="img-fluid img-width"
+              src="assets/img-pc/logo-facebook.png"
+              alt=""
+            />
+            <img
+              class="img-fluid img-width"
+              src="assets/img-pc/logo-instagram.png"
+              alt=""
+            />
+            <img
+              class="img-fluid img-width"
+              src="assets/img-pc/logo-twitter.png"
+              alt=""
+            />
+            <img
+              class="img-fluid img-width"
+              src="assets/img-pc/logo-ws.png"
+              alt=""
+            />
+          </section>
+          <section
+            class="d-flex text-center flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
+          >
+            <p class="fw-bold h4">Buscanos en redes sociales como GG.red</p>
+            <a p class="nav-link h3 text-black fw-bold py-3" href=""
+              >Comunicate con nosotros</a
+            >
+            <p class="fw-bold h6">© Copyrights 2023</p>
+          </section>
+        </footer>
+        <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

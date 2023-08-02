@@ -18,107 +18,126 @@
     </html>
   </head>
   <body class="bg-body">
-    <nav class="navbar navbar-dark bg-nav fixed-top">
-      <div class="container-fluid justify-content-around">
-        <a class="navbar-brand first-menu" href="/torneos/torneos.html"
-          >Torneos</a
-        >
-        <a class="navbar-brand first-menu" href="chats/Chats.html"
-          >canales de chat</a
-        >
-        <a
-          class="navbar-brand pag-act"
-          href="recomendaciones/recomendaciones.html"
-          >Recomendaciones</a
-        >
-        <a class="navbar-brand first-menu" href="Noticias/noticias.html"
-          >Noticias</a
-        >
-        <a class="navbar-brand first-menu" href="soundtracks/soundtracks.html"
-          >Soundtracks</a
-        >
-        <a class="navbar-brand first-menu" href="marketplace/marketplace.html"
-          >Tienda</a
-        >
-        <a class="navbar-brand first-menu" href="comunidad/comunidad.html"
-          >Ayuda a la comunidad</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              <img class="logo" src="assets-rec/img/logo.png" alt="" />
-              GG.red
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
+    <nav class="navbar bg-nav fixed-top d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand" href="/index.html"
+            ><img src="/assets/img-navbar/logo.png" alt="" class="logo"
+          /></a>
+          <a class="btn first-menu mt-1 f-nav" href="">Iniciar Sesión</a>
+          <a class="btn first-menu mt-1 f-nav" href="">Blog</a>
+          <li class="nav-item dropdown first-menu m-i">
+            <a
+              class="nav-link f-nav dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Idiomas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </div>
+        <div class="d-flex gap-3 space-width">
+          <form class="d-flex t-barra" role="search">
+            <input
+              class="form-control me-2 form-search b-busqueda"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-search-menu b-busqueda" type="submit">
+              Buscar
+            </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
+                GG.red
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
             <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list"
-              >
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">
-                  Buscar
-                </button>
-              </form>
+              <div class="offcanvas-body second-menu">
+                <ul>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/torneos/torneos.html"
+                      >Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/chats/Chats.html"
+                      >canales de chat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/recomendaciones/recomendaciones.html"
+                      >Recomendaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/Noticias/noticias.html"
+                      >Noticias</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/soundtracks/soundtracks.html"
+                      >Soundtracks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/marketplace/marketplace.html"
+                      >Tienda</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="navbar-brand second-menu-list"
+                      href="/comunidad/comunidad.html"
+                      >Ayuda a la comunidad</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -126,80 +145,224 @@
     </nav>
     <div class="img-fondo"></div>
     <p class="f-2p text-center fs-4 mt-3">Mejores juegos para PC</p>
-    <section class="d-flex justify-content-center">
-      <ul class="list-group-numbered">
-        <li class="f-2p list-group-item">
-          Half-Life 2
-          <span
-            ><img
-              src="assets/img-pc/Half-Life_2_cover.jpg"
-              style="height: 200px"
-              alt=""
-          /></span>
-        </li>
-        <li class="f-2p list-group-item mt-3">
-          BioShock
-          <span
-            ><img
-              src="assets/img-pc/BioShock.jpg"
-              class="ms-5"
-              style="height: 200px"
-              alt=""
-          /></span>
-        </li>
-        <li class="f-2p list-group-item mt-3">
-          The Elder Scrolls V: Skyrim
-          <span
-            ><img src="assets/img-pc/Skyrim.jpg" style="height: 200px"
-          /></span>
-        </li>
-        <li class="f-2p list-group-item mt-3">
-          Mass Effect 2
-          <span
-            ><img src="assets/img-pc/MassEffect2.png" style="height: 200px"
-          /></span>
-        </li>
-        <li class="f-2p list-group-item mt-3">
-          Diablo
-          <span
-            ><img src="assets/img-pc/Diablo.jpg" style="height: 200px" alt=""
-          /></span>
-        </li>
-        <li class="f-2p list-group-item mt-3">
-          Counter Strike: Global Ofensive
-          <span
-            ><img
-              src="assets/img-pc/csgo.jpg"
-              style="height: 100px; width: 200px"
-          /></span>
-        </li>
-        <li class="f-2p list-group-item mt-3">
-          Team Fortress 2
-          <span><img src="assets/img-pc/Tf2.jpg" style="height: 200px" /></span>
-        </li>
-        <li class="f-2p list-group-item mt-3">
-          Halo 2
-          <span
-            ><img src="assets/img-pc/halo2.jpg" style="height: 200px" alt=""
-          /></span>
-        </li>
-        <li class="f-2p list-group-item">
-          Star Wars: Knights of the Old Republic
-          <span>
-            <img src="assets/img-pc/star-wars.jpg" style="height: 200px" alt=""
-          /></span>
-        </li>
-        <li class="f-2p list-group-item">
-          Left 4 Dead
-          <span
-            ><img
-              src="assets/img-pc/Left4Dead.jpg"
-              style="height: 200px"
-              alt=""
-          /></span>
-        </li>
-      </ul>
-    </section>
+    <div class="container-fluid container">
+      <section class="d-flex justify-content-center row flex-wrap gap-5">
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Half-Life_2_cover.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Half-Life 2</h5>
+                <p class="card-text text-info fs-5">
+                  Gordon Freeman despierta de su estado de hibernación y se
+                  convierte en el símbolo de la resistencia humana frente a la
+                  Alianza.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/BioShock.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">BioShock</h5>
+                <p class="card-text text-info fs-5">
+                  está ambientado durante una ucronía del año 1960, en Rapture,
+                  una ciudad distópica/antiutópica ficticia en el fondo del
+                  océano Atlántico.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Skyrim.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">The Elder Scrolls V: Skyrim</h5>
+                <p class="card-text text-info fs-5">
+                  tiene lugar doscientos años después de lo ocurrido en Oblivion,por lo que no es una continuación o secuela.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/MassEffect2.png"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Mass Effect 2</h5>
+                <p class="card-text text-info fs-5">
+                  interesante mezcla de rol y acción, que permite controlar varios personajes simultáneamente en todo tipo de misiones
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Diablo.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Diablo</h5>
+                <p class="card-text text-info fs-5">
+                  se basa en la premisa de una guerra entre El Cielo y El infierno.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/csgo.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Counter Strike: Global Ofensive</h5>
+                <p class="card-text text-info fs-5">
+                  dos equipos, terroristas y antiterroristas, luchando entre sí por cumplir objetivos como plantar/ desactivar una bomba.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Tf2.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Team Fortress 2</h5>
+                <p class="card-text text-info fs-5">
+                  es el primer juego multijugador de Valve Software que incorpora un sistema de estadísticas de los jugadores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/halo2.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Halo 2</h5>
+                <p class="card-text text-info fs-5">
+                  El juego inicia con un juicio en contra de un comandante Elite del Covenant, dentro de una enorme estructura flotante que sirve a manera de ciudad y es denominada High Charity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/star-wars.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Star Wars: Knights of the Old Republic</h5>
+                <p class="card-text text-info fs-5">
+                  4000 años antes del Imperio Galáctico, miles de caballeros Jedi han caído en la batalla contra los despiadados Sith.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-nav col-6" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/img-pc/Left4Dead.jpg"
+                style="height: 250px"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="height: 250px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title f-2p">Left 4 Dead</h5>
+                <p class="card-text text-info fs-5">
+                  Ambientado durante los inicios de un brote de zombis en todo el mundo, el juego enfrenta a sus cuatro protagonistas conocidos como los "sobrevivientes"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer
       class="row d-flex flex-column justify-content-center py-4 container-fluid"
     >
@@ -228,13 +391,15 @@
       <section
         class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2"
       >
-        <p class="fw-bold h4">Buscanos en redes sociales como GG.red</p>
+        <p class="fw-bold h4 text-center">
+          Buscanos en redes sociales como GG.red
+        </p>
         <a p class="nav-link h3 text-black fw-bold py-3" href=""
           >Comunicate con nosotros</a
         >
         <p class="fw-bold h6">© Copyrights 2023</p>
       </section>
     </footer>
-    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
