@@ -10,85 +10,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="comunidad.css">
 </head>
-<body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand first-menu" href="/proyecto-modulo-1/torneos/torneos.html">Torneos</a>
-          <a class="navbar-brand first-menu" href="/proyecto-modulo-1/chats/Chats.html">canales de chat</a>
-          <a class="navbar-brand first-menu" href="/proyecto-modulo-1/recomendaciones/recomendaciones.html">Recomendaciones</a>
-          <a class="navbar-brand first-menu" href="/proyecto-modulo-1/Noticias/noticias.html">Noticias</a>
-          <a class="navbar-brand first-menu" href="/proyecto-modulo-1/soundtracks/soundtracks.html">Soundtracks</a>
-          <a class="navbar-brand first-menu" href="/proyecto-modulo-1/marketplace/marketplace.html">Tienda</a>
-          <a class="navbar-brand first-menu" href="/proyecto-modulo-1/comunidad/comunidad.html">Ayuda a la comunidad</a>
-    
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img class="logo" src="/proyecto-modulo-1/assets/img-navbar/logo.png" alt="" />
-                GG.red
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 second-menu-list">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Iniciar sesión</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idomas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2 form-search"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-search-menu" type="submit">Buscar</button>
-              </form>
-            </div>
+<body style="background-color: #090826;">
+  <nav class="navbar navbar-dark bg-dark fixed-top d-flex">
+          <div class="container-fluid justify-content-between">
+          <div class="d-flex justify-content-between">
+            <span class="navbar-brand"><img src="/assets/img-navbar/logo.png" alt="" class="logo"></span>
+            <a class="btn first-menu mt-1 fs-4" href="">Iniciar Sesión</a>
+            <a class="btn first-menu mt-1 fs-4" href="">Blog</a>
+            <a
+              class="nav-link dropdown-toggle first-menu m-i fs-4"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Idiomas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li><a class="dropdown-item" href="#">Ingles</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Portugues</a>
+              </li>
+              
+            </ul>
+          </div>  
+                         
+          </li>
+
+        </ul>
+        <div class="d-flex gap-3 space-width">
+          <form class="d-flex t-barra" role="search">
+            <input
+              class="form-control me-2 form-search b-busqueda"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-search-menu b-busqueda" type="submit">Buscar</button>
+          </form>        
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <img class="logo" src="/assets/img-navbar/logo.png" alt="" />
+              GG.red
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+          <div class="offcanvas-body second-menu">
+            <ul>
+            
+            <li><a class="navbar-brand second-menu-list" href="/torneos/torneos.html">Torneos</a></li> 
+            <li><a class="navbar-brand second-menu-list" href="/chats/Chats.html">canales de chat</a></li> 
+            <li><a class="navbar-brand second-menu-list" href="/recomendaciones/recomendaciones.html">Recomendaciones</a></li>
+            <li><a class="navbar-brand second-menu-list" href="/Noticias/noticias.html">Noticias</a></li>
+            <li><a class="navbar-brand second-menu-list" href="/soundtracks/soundtracks.html">Soundtracks</a></li>
+            <li><a class="navbar-brand second-menu-list" href="/marketplace/marketplace.html">Tienda</a></li>
+            <li><a class="navbar-brand second-menu-list" href="/comunidad/comunidad.html">Ayuda a la comunidad</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+    </nav>
 
       <img class="w-100" src="/assets/img-carrusel/img-soudtracks.jpg" alt="">
 
@@ -163,17 +164,17 @@
 
       <footer class="row d-flex flex-column justify-content-center py-4 container-fluid">
         <section class="d-flex justify-content-center container-fluid gap-3 py-4">
-            <img class="img-fluid img-width" src="/assets/img/logo-facebook.png" alt="">
-            <img class="img-fluid img-width" src="/assets/img/logo-instagram.png" alt="">
-            <img class="img-fluid img-width" src="/assets/img/logo-twitter.png" alt="">
-            <img class="img-fluid img-width" src="/assets/img/logo-ws.png" alt="">
+            <img class="img-fluid img-width-f" src="/assets/img/logo-facebook.png" alt="">
+            <img class="img-fluid img-width-f" src="/assets/img/logo-instagram.png" alt="">
+            <img class="img-fluid img-width-f" src="/assets/img/logo-twitter.png" alt="">
+            <img class="img-fluid img-width-f" src="/assets/img/logo-ws.png" alt="">
 
         </section>
         <section class="d-flex flex-column justify-content-center align-items-center container-fluid gap-3 py-2">
-        <p class=" fw-bold h4">Buscanos en redes sociales como GG.red</p>
-        <a p class="nav-link h3 text-black fw-bold py-3" href="">Comunicate con nosotros</a>
-        <p class="fw-bold h6">© Copyrights 2023</p>
-        </section>
+          <p class=" fw-bold h4 text-center font-color-footer">Buscanos en redes sociales como GG.red</p>
+          <a p class="nav-link h3 fw-bold py-3 font-color-footer" href="">Comunicate con nosotros</a>
+          <p class="fw-bold h6 font-color-footer">© Copyrights 2023</p>
+          </section>
     </footer>
     <script src="/proyecto-modulo-1/assets/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
 </body>
