@@ -1,0 +1,58 @@
+POST http://localhost:4000/app/register
+Content-Type: application/json 
+
+{
+    "username": "",
+    "email": "@mail.com",
+    "name": "Guillermo",
+    "lastName": "Abril",
+    "age": 36,
+    "password": "Guillermo_123",
+    "pais": "Colombia"
+}
+
+###
+POST http://localhost:4000/app/newprod
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Monitor msi 240",
+    "categoria": "Pantalla",
+    "vendedor": "Guillermo",
+    "descripcion": "Monitor msi 1080p con tasa de refresco de 240Hz",
+    "stock": 1,
+    "img": "img"
+}
+###
+GET http://localhost:4000/app/getprod
+
+###
+
+POST http://localhost:4000/app/publication
+Content-Type: application/json
+
+{
+"user_id": "64f287860f308e8ffa2ea713", 
+"description": "prueba si funciona", 
+"name": "Guillermo30", 
+"source": "img", 
+"reactions": "gfsd", 
+"comments": "dgf"
+}
+
+###
+GET http://localhost:4000/app/getPublic
+Content-Type: application/json
+
+{
+    "user_id": "64f28645a7bd2898ce2ec530"
+}
+
+###
+GET http://localhost:4000/app/orderPublications
+Content-Type: application/json
+
+{
+    "user_id": "64f287860f308e8ffa2ea713"
+}

@@ -1,23 +1,18 @@
-// llamar la librerias
 const express = require('express')
-
-//rutas importadas
-
-
-// definir los funciones a utilizar
 const app = express()
+const user = require('./routes/users')
+const prod = require('./routes/product')
+const public = require('./routes/publication')
+
 
 app.use(express.json())
+app.use('/app', user)
+app.use('/app', prod)
+app.use('/app', public)
 
-//
+require('./db')
 
-
-// definir el puerto
 const port = 4000
 
-// importamos rutas de usuario
 
-
-
-// iniciar el servidor
 app.listen(port, () => console.log(`Server is running in port ${port}`))
